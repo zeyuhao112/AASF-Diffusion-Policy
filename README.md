@@ -1,4 +1,5 @@
 # AASF Diffusion Policy
+[![DOI](https://zenodo.org/badge/1308799415.svg)](https://doi.org/10.5281/zenodo.21544268)
 
 <!-- AASF_RELEASE_OVERVIEW -->
 
