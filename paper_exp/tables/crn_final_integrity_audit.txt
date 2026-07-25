@@ -1,0 +1,21 @@
+==== File and seed validation ====
+Original trace count: 100
+AASF trace count    : 100
+Original eval seeds : 100
+AASF eval seeds     : 100
+Seed range          : 4300000-4300099
+✅ All four seed sets are identical.
+
+==== Result/trace consistency ====
+Original trace score matches eval: 100/100
+AASF trace score matches eval    : 100/100
+
+==== Method behavior validation ====
+Original raw equals filtered     : 100/100
+AASF changed filtered trajectory : 100/100
+
+==== CRN cross-method validation ====
+Exact first raw-action chunk match: 100/100
+
+✅ Final CRN integrity audit passed.
+The Original and AASF evaluations are ready for paired statistical analysis.

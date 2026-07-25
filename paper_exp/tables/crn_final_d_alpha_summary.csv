@@ -1,0 +1,16 @@
+variable,statistic,value
+d_i,count,20979
+d_i,median,8.100452423095703
+d_i,q1,4.126363277435303
+d_i,q3,18.695298194885254
+d_i,iqr,14.568934917449951
+d_i,p90,34.73793182373047
+d_i,p95,41.948274230957004
+d_i,fraction_above_tau_10,0.4191334191334191
+alpha_i,count,20979
+alpha_i,mean,0.7008893560525647
+alpha_i,sd,0.14319874162469193
+alpha_i,median,0.800000011920929
+alpha_i,fraction_at_alpha_min_0.45,0.19333619333619334
+alpha_i,fraction_at_alpha_max_0.80,0.5808665808665808
+alpha_i,fraction_below_alpha_max,0.4191334191334191

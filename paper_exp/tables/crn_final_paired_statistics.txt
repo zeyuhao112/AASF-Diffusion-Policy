@@ -1,0 +1,33 @@
+==== CRN final paired statistical analysis ====
+
+Input verification:
+  SHA-256 checks passed for all five frozen inputs.
+  Paired seeds: 4300000-4300099 (n=100)
+
+Score descriptives:
+  Original: mean=0.93197353, SD=0.21800518, median=0.99993097, IQR=[0.98048921, 1.00000000]
+  AASF    : mean=0.92459397, SD=0.21803675, median=1.00000000, IQR=[0.97582970, 1.00000000]
+
+Paired score difference (AASF - Original):
+  Mean difference=-0.00737956, paired bootstrap 95% CI=[-0.03672099, +0.01984702]
+  Median difference=+0.00000000, paired bootstrap 95% CI=[+0.00000000, +0.00000000]
+  Hodges-Lehmann shift=+0.00000000
+  Win/tie/loss=34/33/33
+  P(AASF better | non-tie)=0.507463
+  Exact sign-test p=1
+  Wilcoxon signed-rank W=1081.000000, two-sided p=0.7171237825
+  Rank-biserial correlation=-0.050922
+  Cohen dz=-0.051258
+
+Primary success analysis (score >= 0.90):
+  Original: 92/100 (92.0%)
+  AASF    : 89/100 (89.0%)
+  Rate difference=-3.0%, paired bootstrap 95% CI=[-8.0%, +1.0%]
+  Discordant pairs: Original-only=4, AASF-only=1
+  Exact McNemar p=0.375
+
+Saved files:
+  paper_exp/tables/crn_final_paired_episode_results.csv
+  paper_exp/tables/crn_final_threshold_sensitivity.csv
+  paper_exp/tables/crn_final_paired_statistics.json
+  paper_exp/tables/crn_final_paired_statistics.txt

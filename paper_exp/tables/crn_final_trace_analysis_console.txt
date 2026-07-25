@@ -1,0 +1,79 @@
+==== CRN final trace analysis ====
+
+Input validation:
+  Original traces: 100
+  AASF traces    : 100
+  Paired seeds   : 4300000-4300099
+
+Timing after per-episode warm-up removal:
+  Values are mean ± SD across 100 episode-level means.
+
+  Original policy inference:
+    590.862848 ± 7.807161 ms
+
+  Original post-processing/instrumentation:
+    0.010384 ± 0.000222 ms
+
+  Original decision loop:
+    591.022463 ± 7.807938 ms
+
+  AASF policy inference:
+    586.875831 ± 6.522528 ms
+
+  AASF post-processing:
+    0.382318 ± 0.009069 ms
+
+  AASF decision loop:
+    587.406173 ± 6.527300 ms
+
+  Net AASF post-processing overhead:
+    0.371933 ± 0.009013 ms
+
+  Net overhead relative to Original policy inference:
+    0.062947%
+
+  Important:
+    Differences in policy-inference or total-loop time
+    must not be interpreted as acceleration caused by AASF.
+
+Action-difference distribution:
+  Finite d_i values: 20979
+  Median            : 8.100452
+  Q1                : 4.126363
+  Q3                : 18.695298
+  IQR               : 14.568935
+  90th percentile   : 34.737932
+  95th percentile   : 41.948274
+  Fraction d_i > 10 : 41.913342%
+
+Adaptive-coefficient distribution:
+  Finite alpha_i values : 20979
+  Mean                  : 0.700889
+  SD                    : 0.143199
+  Median                : 0.800000
+  At alpha_min = 0.45   : 19.333619%
+  At alpha_max = 0.80   : 58.086658%
+  Below alpha_max       : 41.913342%
+
+Representative episode:
+  Seed               : 4300005
+  Original score     : 1.00000000
+  AASF score         : 1.00000000
+  Original D3        : 6.08080082
+  AASF D3            : 4.99363296
+  D3 reduction       : +1.08716787
+  Plotted steps      : 144
+
+Saved outputs:
+  paper_exp/tables/crn_final_timing_episode_means.csv
+  paper_exp/tables/crn_final_timing_summary.csv
+  paper_exp/tables/crn_final_d_alpha_summary.csv
+  paper_exp/tables/crn_final_aasf_episode_diagnostics.csv
+  paper_exp/tables/crn_final_smoothness_episode_metrics.csv
+  paper_exp/tables/crn_final_representative_episode.txt
+  paper_exp/tables/crn_final_trace_analysis.json
+  paper_exp/tables/crn_final_trace_analysis.txt
+  paper_exp/figures/crn_final_d_alpha_distributions.png
+  paper_exp/figures/crn_final_d_alpha_distributions.pdf
+  paper_exp/figures/crn_final_representative_action_timeseries.png
+  paper_exp/figures/crn_final_representative_action_timeseries.pdf

@@ -1,0 +1,18 @@
+Representative-episode selection
+================================
+Selection rule:
+  1. Both Original and AASF scores must be >= 0.90.
+  2. Use the first score-difference cutoff among 0.02, 0.05, 0.10, or unrestricted that yields at least five candidates.
+  3. Select the candidate whose D3 reduction is closest to the candidate-set median.
+
+Applied absolute score-difference cutoff: 0.02
+Candidate episodes: 67
+Median candidate D3 reduction: +1.08716787
+Selected seed: 4300005
+Original score: 1.00000000
+AASF score: 1.00000000
+AASF - Original score: +0.00000000
+Original D3: 6.08080082
+AASF D3: 4.99363296
+Original - AASF D3 reduction: +1.08716787
+Common plotted action steps: 144

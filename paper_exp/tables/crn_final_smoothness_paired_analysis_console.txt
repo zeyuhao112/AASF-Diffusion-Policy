@@ -1,0 +1,44 @@
+==== CRN final paired smoothness analysis ====
+
+Positive reductions mean that AASF is smoother.
+Wilcoxon p-values use Holm correction across D1, D2, and D3.
+
+D1:
+  Original: 9.44204006 ± 1.91269598
+  AASF    : 8.37635786 ± 1.49483087
+  Mean reduction: +1.06568221 with bootstrap 95% CI [+0.78051143, +1.34759337]
+  Relative mean reduction: +11.287% with bootstrap 95% CI [+8.463%, +13.970%]
+  Smoother/tie/rougher: 82/0/18
+  Wilcoxon raw p=4.555947351e-10, Holm-adjusted p=9.111894703e-10
+  Rank-biserial correlation=+0.718020
+  Cohen dz=+0.724832
+
+D2:
+  Original: 5.34845952 ± 1.06840942
+  AASF    : 4.46038684 ± 0.80696424
+  Mean reduction: +0.88807269 with bootstrap 95% CI [+0.71257123, +1.06217728]
+  Relative mean reduction: +16.604% with bootstrap 95% CI [+13.652%, +19.410%]
+  Smoother/tie/rougher: 84/0/16
+  Wilcoxon raw p=8.357904104e-13, Holm-adjusted p=2.507371231e-12
+  Rank-biserial correlation=+0.824158
+  Cohen dz=+0.989133
+
+D3:
+  Original: 7.54540603 ± 1.75228132
+  AASF    : 6.52998238 ± 1.47608242
+  Mean reduction: +1.01542365 with bootstrap 95% CI [+0.73970321, +1.28876541]
+  Relative mean reduction: +13.458% with bootstrap 95% CI [+10.034%, +16.674%]
+  Smoother/tie/rougher: 77/0/23
+  Wilcoxon raw p=2.490848472e-09, Holm-adjusted p=2.490848472e-09
+  Rank-biserial correlation=+0.686733
+  Cohen dz=+0.722537
+
+Net AASF post-processing overhead:
+  0.371933 ± 0.009013 ms
+  Bootstrap 95% CI: [0.370162, 0.373677] ms
+  Relative to Original policy inference: 0.062947% with bootstrap 95% CI [0.062611%, 0.063276%]
+
+Saved files:
+  paper_exp/tables/crn_final_smoothness_paired_statistics.csv
+  paper_exp/tables/crn_final_smoothness_paired_statistics.json
+  paper_exp/tables/crn_final_smoothness_paired_statistics.txt

@@ -1,0 +1,71 @@
+% Final manuscript-ready tables for AASF.
+% Lower D1, D2, and D3 are better.
+
+\begin{table}[t]
+\centering
+\caption{Task performance across 100 common-random-number paired episodes.}
+\label{tab:task_performance}
+\begin{tabular}{lccc}
+\hline
+Metric & Original & AASF & Paired result \\
+\hline
+Score &
+$0.9320 \pm 0.2180$ &
+$0.9246 \pm 0.2180$ &
+$\Delta=-0.0074$,
+95\% CI $[-0.0367,0.0198]$ \\
+Success rate ($\geq0.90$) &
+$92\%$ &
+$89\%$ &
+$\Delta=-3$ pp,
+95\% CI $[-8,1]$ pp \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering
+\caption{Paired action-smoothness results across 100 episodes.}
+\label{tab:smoothness}
+\begin{tabular}{lcccc}
+\hline
+Metric & Original & AASF & Reduction & Holm-adjusted $p$ \\
+\hline
+D1 &
+$9.4420 \pm 1.9127$ &
+$8.3764 \pm 1.4948$ &
+$11.29\%$ &
+$9.11\times10^{-10}$ \\
+D2 &
+$5.3485 \pm 1.0684$ &
+$4.4604 \pm 0.8070$ &
+$16.60\%$ &
+$2.51\times10^{-12}$ \\
+D3 &
+$7.5454 \pm 1.7523$ &
+$6.5300 \pm 1.4761$ &
+$13.46\%$ &
+$2.49\times10^{-9}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering
+\caption{AASF computational overhead.}
+\label{tab:overhead}
+\begin{tabular}{lc}
+\hline
+Quantity & Result \\
+\hline
+Net post-processing overhead &
+$0.3719 \pm 0.0090$ ms \\
+Bootstrap 95\% CI &
+$[0.3702,0.3737]$ ms \\
+Relative to policy inference &
+$0.06295\%$ \\
+\hline
+\end{tabular}
+\end{table}

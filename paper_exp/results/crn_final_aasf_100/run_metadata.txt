@@ -1,0 +1,88 @@
+method=aasf
+start_seed=4300000
+n_test=100
+output_dir=paper_exp/results/crn_final_aasf_100
+checkpoint=data/checkpoints/pusht.ckpt
+device=cuda:0
+python_bin=/root/miniconda3/bin/python
+started_utc=2026-07-10T18:22:11Z
+
+[Git]
+5ba07ac6661db573af695b419a7947ecb704690f
+ M diffusion_policy/env_runner/pusht_keypoints_runner.py
+ M diffusion_policy/gym_util/async_vector_env.py
+ M diffusion_policy/policy/diffusion_unet_lowdim_policy.py
+ M eval.py
+?? --checkpoint
+?? --device
+?? --output_dir
+?? diffusion_policy/config/train_smooth_diffusion_unet_lowdim_workspace.yaml
+?? diffusion_policy/env_runner/pusht_keypoints_runner.py.bak
+?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_action_smooth_filter
+?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_adaptive_asf
+?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_sma
+?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_smooth_metrics
+?? diffusion_policy/gym_util/async_vector_env.py.bak
+?? diffusion_policy/gym_util/async_vector_env.py.bak2
+?? diffusion_policy/policy/smooth_diffusion_unet_lowdim_policy.py
+?? eval.py.before_seed_override
+?? paper_artifacts/
+?? paper_exp/
+?? paper_materials/
+?? paper_materials_package.tar.gz
+?? reproduce_records/
+
+[Checkpoint SHA256]
+f804e16575e261fa0b7e981da3f67741fc8517817734320d550e43a4182bf876  data/checkpoints/pusht.ckpt
+
+[Locked baseline definition SHA256]
+88b2282ec6e877e0273f7bd4c5c34c282d465ed29842a06c7ce9c18bf3ff610a  paper_artifacts/code/baseline_definitions_locked.md
+
+[Environment variables]
+DP_ACTION_SMOOTH_ALPHA=0.8
+DP_ACTION_SMOOTH_ALPHA_MAX=0.8
+DP_ACTION_SMOOTH_ALPHA_MIN=0.45
+DP_ACTION_SMOOTH_GAIN=0.25
+DP_ACTION_SMOOTH_MODE=adaptive
+DP_ACTION_SMOOTH_THRESHOLD=10.0
+DP_N_ENVS=1
+DP_N_TEST=100
+DP_N_TEST_VIS=0
+DP_N_TRAIN=0
+DP_N_TRAIN_VIS=0
+DP_PAIRED_POLICY_SEED=1
+DP_POLICY_SEED_SALT=20260710
+DP_TEST_START_SEED=4300000
+DP_TRACE_DIR=paper_artifacts/traces/crn_final_aasf_100
+DP_TRACE_ENABLE=1
+DP_TRACE_METHOD=aasf_crn_final
+DP_TRACE_WARMUP_QUERIES=3
+SDL_VIDEODRIVER=dummy
+WANDB_MODE=offline
+
+[Python]
+Python 3.8.10
+
+[GPU]
+Sat Jul 11 02:22:16 2026
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.105.08             Driver Version: 580.105.08     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  |   00000000:57:00.0 Off |                  N/A |
+| 30%   28C    P8             27W /  350W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+finished_utc=2026-07-10T18:52:58Z
