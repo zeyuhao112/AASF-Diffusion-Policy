@@ -1,0 +1,34 @@
+cff-version: "1.2.0"
+message: "If you use this software in your research, please cite it using the metadata below."
+type: software
+title: "AASF Diffusion Policy"
+version: "1.0.0"
+date-released: "2026-07-25"
+
+authors:
+  - family-names: "Hao"
+    given-names: "Zeyu"
+    orcid: "https://orcid.org/0009-0007-4225-9132"
+    affiliation: "School of Electrical and Control Engineering, North University of China"
+
+  - family-names: "Zhang"
+    given-names: "Yanbing"
+    email: "zhyb1126@163.com"
+    affiliation: "School of Electrical and Control Engineering, North University of China"
+
+repository-code: "https://github.com/zeyuhao112/AASF-Diffusion-Policy"
+url: "https://github.com/zeyuhao112/AASF-Diffusion-Policy"
+license: "MIT"
+
+abstract: >-
+  AASF Diffusion Policy provides the research implementation and evaluation
+  utilities developed on top of the upstream Diffusion Policy codebase,
+  including smooth-policy components, causal audits, holdout analyses,
+  and action-chunk boundary diagnostics.
+
+keywords:
+  - "diffusion policy"
+  - "robot learning"
+  - "visuomotor policy"
+  - "action smoothness"
+  - "trajectory control"
