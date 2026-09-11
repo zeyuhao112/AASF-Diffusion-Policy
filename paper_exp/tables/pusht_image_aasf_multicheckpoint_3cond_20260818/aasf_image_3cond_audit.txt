@@ -1,0 +1,23 @@
+===== AASF IMAGE 3-CONDITION ANALYSIS AUDIT =====
+
+analysis_scope=offline_trace_analysis_only
+eval_py_called=NO
+new_rollout=NO
+conditions=IMG42,IMG43,IMG44
+methods=original,aasf
+BSOP_enabled=NO
+image_specific_retuning=NO
+checkpoint_specific_retuning=NO
+AASF_alpha_min=0.45
+AASF_alpha_max=0.80
+AASF_tau=10.0
+AASF_gamma=0.25
+control_dt_s=0.1
+D_C_reduction_invariance=PASS
+freeze_manifest_verification=PASS
+seed43_resume_append_only=YES
+seed42_new_traces=100
+seed43_new_traces=100
+seed44_existing_traces=100
+
+AASF_IMAGE_3COND_ANALYSIS_AUDIT = PASS

@@ -1,0 +1,24 @@
+{
+  "dataset": "data/pusht/pusht_cchi_v7_replay.zarr",
+  "action_shape": [
+    25650,
+    2
+  ],
+  "num_episodes": 206,
+  "num_actions": 25650,
+  "num_within_episode_steps": 25444,
+  "episode_length_min": 49,
+  "episode_length_median": 122.0,
+  "episode_length_max": 246,
+  "action_global_min": 12.0,
+  "action_global_max": 511.0,
+  "step_norm_median": 8.06225774829855,
+  "step_norm_p90": 21.213203435596427,
+  "step_norm_p95": 26.901669532788574,
+  "step_norm_max": 136.4734406395618,
+  "fraction_step_norm_gt_10": 0.3913299795629618,
+  "reference_threshold": 10.0,
+  "reference_threshold_percentile": 60.86700204370382,
+  "threshold_ratio_to_median_step": 1.2403473458920846,
+  "episode_boundaries_excluded": true
+}

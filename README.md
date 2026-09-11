@@ -1,30 +1,55 @@
-# AASF Diffusion Policy
+# AASF–BSOP Diffusion Policy
 [![DOI](https://zenodo.org/badge/1308799415.svg)](https://doi.org/10.5281/zenodo.21544268)
 
 <!-- AASF_RELEASE_OVERVIEW -->
 
-This repository contains the AASF research implementation and evaluation
-utilities built on top of the upstream Diffusion Policy codebase.
+This repository contains the implementation and reproducibility materials for
+Adaptive Action Smoothing Filter (AASF) and Boundary-Safe Overlap Projection
+(BSOP), built on the upstream Diffusion Policy codebase.
 
-## AASF additions
+The current `v1.1.0` research release adds the frozen BSOP implementation,
+seven-condition analyses, image-conditioned replication, Savitzky–Golay and
+Temporal Ensemble baselines, simulated Franka dynamics replay, and the SO-101
+held-out trajectory audit used by the accompanying manuscript.
 
-The principal AASF-related components include:
+## Main implementation
 
-- `diffusion_policy/policy/smooth_diffusion_unet_lowdim_policy.py`:
-  smooth low-dimensional diffusion policy implementation.
-- `diffusion_policy/config/train_smooth_diffusion_unet_lowdim_workspace.yaml`:
-  training configuration for the smooth policy.
-- `diffusion_policy/env_runner/blockpush_lowdim_runner.py` and
-  `diffusion_policy/env_runner/pusht_keypoints_runner.py`:
-  evaluation-runner support used by the AASF experiments.
-- `aasf_final_causal_audit.py`:
-  causal audit utilities.
-- `holdout50_analysis.py`:
-  held-out evaluation analysis.
-- `chunk_boundary_analysis_package/chunk_boundary_analysis.py`:
-  action-chunk boundary analysis.
-- `blockpush_fullbatch_video_replay.sh`:
-  BlockPush evaluation and video-replay utility.
+- `diffusion_policy/env_runner/pusht_keypoints_runner.py`: low-dimensional
+  AASF, BSOP, SG, TE, execution tracing, and overlap diagnostics.
+- `diffusion_policy/env_runner/pusht_image_runner.py`: image-conditioned AASF
+  and BSOP evaluation.
+- `diffusion_policy/env_runner/blockpush_lowdim_runner.py`: BlockPush AASF and
+  BSOP evaluation.
+- `diffusion_policy/common/temporal_ensemble.py`: absolute-time-aligned
+  Temporal Ensemble implementation.
+
+The formal analysis scripts are in `paper_exp/analysis` and
+`paper_exp/scripts`. Frozen compact outputs are under `paper_exp/tables`, while
+baseline-selection records are under `paper_exp/baselines`.
+
+## Evaluated scope
+
+| Evidence | Scope | Important qualification |
+|---|---|---|
+| Seven-condition BSOP study | 3 Push-T low-dimensional checkpoints, BlockPush low-dimensional, and 3 Push-T image checkpoints | 50 paired evaluation seeds per condition |
+| AASF image transfer | 3 Push-T image checkpoints | zero-retuning transfer |
+| SG and TE baselines | Push-T low-dimensional seed-42 checkpoint | development and confirmatory seeds are disjoint |
+| Franka replay | MuJoCo Menagerie Franka Panda | simulated dynamics replay, not hardware validation |
+| SO-101 audit | 10 held-out recorded episodes | teacher-forced offline trajectory audit, not online robot execution |
+
+The final seven-condition summary is
+`paper_exp/tables/bsop_time_normalized_7cond_v1/bsop_time_normalized_primary_table.txt`.
+Detailed reproduction instructions and raw-data layout are in
+[`docs/AASF_BSOP_REPRODUCIBILITY.md`](docs/AASF_BSOP_REPRODUCIBILITY.md).
+
+## Artifact policy
+
+This source repository deliberately excludes checkpoints, datasets, videos,
+server caches, and the bulk raw simulation traces. Compact SO-101 boundary
+arrays are included because they are approximately 1 MB and permit the offline
+projection audit to be rerun. Hash manifests identify the frozen raw inputs
+used by the simulation analyses. Large raw traces should be distributed as a
+versioned release or data supplement, not committed to Git.
 
 ## Upstream attribution
 

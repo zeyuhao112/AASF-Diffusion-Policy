@@ -1,0 +1,24 @@
+TEMPORAL ENSEMBLE FROZEN DEVELOPMENT SELECTION
+======================================
+
+selected_beta=2
+selected_method=te_beta_2p0
+confirmatory_run_allowed=YES
+development_outcome=BETA_SELECTED
+selection_rule=preregistered
+selection_metric=mean_paired_boundary_D1_reduction_pct
+selection_boundary_precision_decimals=6
+tie_break_rule=smallest_beta
+mean_score_diff_floor=-0.01
+max_sr90_count_decrease=1
+development_seeds=4800000-4800019
+formal_confirmatory_seeds=4800100-4800149
+confirmatory_seeds_used=NO
+protocol_sha256=b1cedeaf355f9131b63473342ddfaf9d9209a357b2f4bb8a7b695ae1fc341564
+lock_sha256=ee1c31130a9347132a99624fae9e01b5c73a8eeaa2be80b00313fb4b708415ce
+development_manifest_sha256=7c9cfae8d517bec90b3aeb4131ee384755c847e82986ac5d82f8512700bd69cc
+launcher_sha256=92f0b5712d04016d9ba78820ca568815dda2f29fbec5257bbdd2db3bc5b66ab3
+runner_sha256=02e6a88caf26cf3a7509034f95a1e896a782274d37b1d9965253ac6ebf4a245d
+te_core_sha256=27c3c44c265add75fb5fae5bb20c686611e765c5f6e8c376efcc27f574b4aebe
+te_test_sha256=2a06570e399348609eb080778a6d4c97600236ecd56d77877d2917ff90a5e6bb
+analysis_sha256=cff82523fbc4a31bdb7950ef5525c9f4672bd881d013620412cee8ba2d547e48

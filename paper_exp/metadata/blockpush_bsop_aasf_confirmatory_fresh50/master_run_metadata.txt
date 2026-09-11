@@ -1,0 +1,66 @@
+run_name=blockpush_bsop_aasf_confirmatory_fresh50
+status=started
+started_utc=2026-08-08T09:25:16Z
+
+[Experiment]
+start_seed=4400100
+end_seed=4400149
+n_test=50
+
+[Runner]
+runner=diffusion_policy/env_runner/blockpush_lowdim_runner.py
+runner_sha256=f9e27ff74702fdda0741963828cdf03521ac0f901095ca8f1593ac146cf22aad
+
+[Checkpoint]
+checkpoint=data/checkpoints/block_pushing/epoch=2250-test_mean_score=0.287.ckpt
+checkpoint_sha256=7318ee33a677fa2682a20b0462bb5639d9105cdfd9d3646ca443931dacd30e0f
+
+[Paired random numbers]
+paired_policy_seed=1
+policy_seed_salt=20260710
+
+[Scale transfer]
+aasf_tau=0.019815170512094502
+aasf_alpha=0.8
+aasf_alpha_min=0.45
+aasf_alpha_max=0.8
+aasf_gain=0.25
+
+bsop_eta=1.0
+bsop_lambda_max=0.5
+bsop_rho=0.009907585256047251
+bsop_kappa=0.5
+
+[Methods]
+original=AASF off, BSOP off
+aasf=AASF adaptive, BSOP off
+bsop=AASF off, BSOP on
+bsop_aasf=AASF adaptive, BSOP on
+
+[Host]
+Linux autodl-container-8e0746a055-3daa0f9f 5.15.0-94-generic #104-Ubuntu SMP Tue Jan 9 15:25:40 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+Sat Aug  8 17:25:17 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.76.05              Driver Version: 580.76.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  |   00000000:81:00.0 Off |                  N/A |
+| 30%   30C    P8             44W /  350W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+finished_utc=2026-08-08T11:07:31Z
+status=completed
+artifact_manifest=/root/autodl-tmp/projects/diffusion_policy/paper_exp/metadata/blockpush_bsop_aasf_confirmatory_fresh50/all_artifact_sha256.txt

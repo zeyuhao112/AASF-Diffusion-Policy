@@ -1,0 +1,101 @@
+===== TEMPORAL ENSEMBLE FRESH SEED42 FINAL STUDY FREEZE =====
+
+study = Push-T low-dimensional Temporal Ensemble baseline
+training_checkpoint = seed42
+
+===== DEVELOPMENT =====
+
+development_seeds = 4800000-4800019
+development_episode_count = 120
+development_beta_grid = 0.0,0.5,1.0,2.0,4.0
+
+selected_beta = 2.0
+selected_method = te_beta_2p0
+
+development_parameter_selection = COMPLETE
+
+===== FORMAL CONFIRMATORY =====
+
+formal_seeds = 4800100-4800149
+formal_seed_count = 50
+
+formal_arms = original,te_beta_2p0
+formal_episode_count = 100
+
+alternative_beta_evaluation = NO
+post_unblind_retuning = NO
+new_hyperparameter_search = NO
+
+===== TASK RESULTS =====
+
+original_mean_score = 0.935901
+TE_mean_score = 0.908094
+
+paired_score_difference_TE_minus_original = -0.027807
+paired_score_difference_CI95 = [-0.075929,+0.006060]
+
+SR90_original = 47/50
+SR90_TE = 45/50
+
+exact_score_1_original = 27/50
+exact_score_1_TE = 22/50
+
+===== SMOOTHNESS RESULTS =====
+
+own_trajectory_Boundary_D1_reduction_pct = +3.019841
+own_trajectory_Boundary_D1_CI95 = [-2.572081,+8.349165]
+
+paired_common_prefix_D1_reduction_pct = +0.992550
+paired_common_prefix_D1_CI95 = [-3.185120,+4.929642]
+
+paired_common_prefix_D2_reduction_pct = -0.324470
+paired_common_prefix_D2_CI95 = [-5.065402,+4.103166]
+
+paired_common_prefix_D3_reduction_pct = -3.484081
+paired_common_prefix_D3_CI95 = [-8.828743,+1.375243]
+
+control_dt_s = 0.1
+
+C1_reduction_pct = +0.992550
+C1_CI95 = [-3.185120,+4.929642]
+
+C2_reduction_pct = -0.324470
+C2_CI95 = [-5.065402,+4.103166]
+
+C3_reduction_pct = -3.484081
+C3_CI95 = [-8.828743,+1.375243]
+
+common_prefix_steps_min = 88
+common_prefix_steps_mean = 211.940
+common_prefix_steps_max = 300
+
+===== INTERPRETATION =====
+
+formal_confirmatory_reliable_improvement = NO
+
+Boundary-D1 and D1/C1 point estimates were mildly positive,
+but all corresponding 95% bootstrap confidence intervals included zero.
+
+D2/C2 and D3/C3 point estimates were negative and their
+95% confidence intervals also included zero.
+
+Task-performance point estimates favored the original policy.
+
+===== ANALYSIS PROVENANCE =====
+
+task_metrics_source =
+formal_confirmatory_analysis
+
+Boundary_D1_source =
+formal_confirmatory_analysis
+
+final_D1_D2_D3_C1_C2_C3_source =
+formal_confirmatory_protocol_analysis_v2
+
+legacy_full_trajectory_D1_D2_D3 =
+NOT_FOR_FINAL_REPORTING
+
+formal_rollout_repeated_after_unblinding = NO
+policy_rollout_after_final_analysis = NO
+
+study_status = COMPLETE

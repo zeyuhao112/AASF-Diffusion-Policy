@@ -1,0 +1,32 @@
+TEMPORAL ENSEMBLE DEVELOPMENT SELECTION AUDIT
+======================================
+
+fixed_input_sha256=PASS
+development_manifest_verification=PASS
+development_manifest_files_checked=153
+development_seed_set_exact=4800000-4800019
+development_seed_isolation=PASS
+confirmatory_seeds_used=NO
+per_method_normal_trace_count=20
+actual_execution_accounting=PASS
+boundary_source=actual_executed_query_boundaries
+boundary_selection_metric=mean_per_seed_percent_reduction
+selection_boundary_precision_decimals=6
+bootstrap_samples=100000
+bootstrap_base_seed=20260816
+
+Safeguard rule:
+  mean(TE - Original score) >= -0.01
+  SR@0.90 count decrease <= 1 / 20
+
+Selection rule:
+  among safeguard-passing beta values,
+  maximize mean paired Boundary-D1 reduction;
+  ties at six decimal places select smallest beta.
+
+Eligible beta count=2
+selected_beta=2
+selected_method=te_beta_2p0
+confirmatory_run_allowed=YES
+
+TE_DEVELOPMENT_SELECTION_AUDIT = PASS

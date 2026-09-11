@@ -1,0 +1,9 @@
+status=completed_by_append_only_resume
+resume=001
+original_completed_seeds=4700100-4700149
+aasf_completed_seeds=4700100-4700149
+original_resume_segment=4700122-4700149
+aasf_segment=4700100-4700149
+image_specific_retuning=NO
+checkpoint_specific_retuning=NO
+BSOP_enabled=NO

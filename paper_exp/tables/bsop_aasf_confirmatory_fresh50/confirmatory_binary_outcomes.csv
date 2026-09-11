@@ -1,0 +1,5 @@
+contrast,outcome,n_pairs,old_total,new_total,both_fail,gained,lost,both_success,discordant_pairs,paired_risk_difference,bootstrap_ci_low,bootstrap_ci_high,exact_mcnemar_p
+aasf_to_bsop_aasf,SR@0.90,50,46,45,4,0,1,45,1,-0.02,-0.06,0.0,1.0
+aasf_to_bsop_aasf,Exact success,50,31,26,16,3,8,23,11,-0.1,-0.22,0.02,0.2265625
+original_to_bsop_aasf,SR@0.90,50,46,45,4,0,1,45,1,-0.02,-0.06,0.0,1.0
+original_to_bsop_aasf,Exact success,50,27,26,16,7,8,19,15,-0.02,-0.18,0.14,1.0

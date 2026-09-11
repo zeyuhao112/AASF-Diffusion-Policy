@@ -1,9 +1,9 @@
 cff-version: "1.2.0"
 message: "If you use this software in your research, please cite it using the metadata below."
 type: software
-title: "AASF Diffusion Policy"
-version: "1.0.0"
-date-released: "2026-07-25"
+title: "AASF-BSOP Diffusion Policy"
+version: "1.1.0"
+date-released: "2026-09-11"
 
 authors:
   - family-names: "Hao"
@@ -21,14 +21,16 @@ url: "https://github.com/zeyuhao112/AASF-Diffusion-Policy"
 license: "MIT"
 
 abstract: >-
-  AASF Diffusion Policy provides the research implementation and evaluation
-  utilities developed on top of the upstream Diffusion Policy codebase,
-  including smooth-policy components, causal audits, holdout analyses,
-  and action-chunk boundary diagnostics.
+  AASF-BSOP Diffusion Policy provides the research implementation and
+  reproducibility materials developed on top of the upstream Diffusion Policy
+  codebase, including adaptive action smoothing, boundary-safe overlap
+  projection, baseline comparisons, cross-condition analyses, simulated Franka
+  dynamics replay, and a teacher-forced SO-101 held-out trajectory audit.
 
 keywords:
   - "diffusion policy"
   - "robot learning"
   - "visuomotor policy"
   - "action smoothness"
+  - "boundary-safe overlap projection"
   - "trajectory control"

@@ -1,0 +1,351 @@
+condition,seed,original_candidates,bsop_candidates,duplicate_identity_pass
+Push-T lowdim seed42,4300100,1,1,True
+Push-T lowdim seed42,4300101,1,1,True
+Push-T lowdim seed42,4300102,1,1,True
+Push-T lowdim seed42,4300103,1,1,True
+Push-T lowdim seed42,4300104,1,1,True
+Push-T lowdim seed42,4300105,1,1,True
+Push-T lowdim seed42,4300106,1,1,True
+Push-T lowdim seed42,4300107,1,1,True
+Push-T lowdim seed42,4300108,1,1,True
+Push-T lowdim seed42,4300109,1,1,True
+Push-T lowdim seed42,4300110,1,1,True
+Push-T lowdim seed42,4300111,1,1,True
+Push-T lowdim seed42,4300112,1,1,True
+Push-T lowdim seed42,4300113,1,1,True
+Push-T lowdim seed42,4300114,1,1,True
+Push-T lowdim seed42,4300115,1,1,True
+Push-T lowdim seed42,4300116,1,1,True
+Push-T lowdim seed42,4300117,1,1,True
+Push-T lowdim seed42,4300118,1,1,True
+Push-T lowdim seed42,4300119,1,1,True
+Push-T lowdim seed42,4300120,1,1,True
+Push-T lowdim seed42,4300121,1,1,True
+Push-T lowdim seed42,4300122,1,1,True
+Push-T lowdim seed42,4300123,1,1,True
+Push-T lowdim seed42,4300124,1,1,True
+Push-T lowdim seed42,4300125,1,1,True
+Push-T lowdim seed42,4300126,1,1,True
+Push-T lowdim seed42,4300127,1,1,True
+Push-T lowdim seed42,4300128,1,1,True
+Push-T lowdim seed42,4300129,1,1,True
+Push-T lowdim seed42,4300130,1,1,True
+Push-T lowdim seed42,4300131,1,1,True
+Push-T lowdim seed42,4300132,1,1,True
+Push-T lowdim seed42,4300133,1,1,True
+Push-T lowdim seed42,4300134,1,1,True
+Push-T lowdim seed42,4300135,1,1,True
+Push-T lowdim seed42,4300136,1,1,True
+Push-T lowdim seed42,4300137,1,1,True
+Push-T lowdim seed42,4300138,1,1,True
+Push-T lowdim seed42,4300139,1,1,True
+Push-T lowdim seed42,4300140,1,1,True
+Push-T lowdim seed42,4300141,1,1,True
+Push-T lowdim seed42,4300142,1,1,True
+Push-T lowdim seed42,4300143,1,1,True
+Push-T lowdim seed42,4300144,1,1,True
+Push-T lowdim seed42,4300145,1,1,True
+Push-T lowdim seed42,4300146,1,1,True
+Push-T lowdim seed42,4300147,1,1,True
+Push-T lowdim seed42,4300148,1,1,True
+Push-T lowdim seed42,4300149,1,1,True
+Push-T lowdim seed43,4300100,1,1,True
+Push-T lowdim seed43,4300101,1,1,True
+Push-T lowdim seed43,4300102,1,1,True
+Push-T lowdim seed43,4300103,1,1,True
+Push-T lowdim seed43,4300104,1,1,True
+Push-T lowdim seed43,4300105,1,1,True
+Push-T lowdim seed43,4300106,1,1,True
+Push-T lowdim seed43,4300107,1,1,True
+Push-T lowdim seed43,4300108,1,1,True
+Push-T lowdim seed43,4300109,1,1,True
+Push-T lowdim seed43,4300110,1,1,True
+Push-T lowdim seed43,4300111,1,1,True
+Push-T lowdim seed43,4300112,1,1,True
+Push-T lowdim seed43,4300113,1,1,True
+Push-T lowdim seed43,4300114,1,1,True
+Push-T lowdim seed43,4300115,1,1,True
+Push-T lowdim seed43,4300116,1,1,True
+Push-T lowdim seed43,4300117,1,1,True
+Push-T lowdim seed43,4300118,1,1,True
+Push-T lowdim seed43,4300119,1,1,True
+Push-T lowdim seed43,4300120,1,1,True
+Push-T lowdim seed43,4300121,1,1,True
+Push-T lowdim seed43,4300122,1,1,True
+Push-T lowdim seed43,4300123,1,1,True
+Push-T lowdim seed43,4300124,1,1,True
+Push-T lowdim seed43,4300125,1,1,True
+Push-T lowdim seed43,4300126,1,1,True
+Push-T lowdim seed43,4300127,1,1,True
+Push-T lowdim seed43,4300128,1,1,True
+Push-T lowdim seed43,4300129,1,1,True
+Push-T lowdim seed43,4300130,1,1,True
+Push-T lowdim seed43,4300131,1,1,True
+Push-T lowdim seed43,4300132,1,1,True
+Push-T lowdim seed43,4300133,1,1,True
+Push-T lowdim seed43,4300134,1,1,True
+Push-T lowdim seed43,4300135,1,1,True
+Push-T lowdim seed43,4300136,1,1,True
+Push-T lowdim seed43,4300137,1,1,True
+Push-T lowdim seed43,4300138,1,1,True
+Push-T lowdim seed43,4300139,1,1,True
+Push-T lowdim seed43,4300140,1,1,True
+Push-T lowdim seed43,4300141,1,1,True
+Push-T lowdim seed43,4300142,1,1,True
+Push-T lowdim seed43,4300143,1,1,True
+Push-T lowdim seed43,4300144,1,1,True
+Push-T lowdim seed43,4300145,1,1,True
+Push-T lowdim seed43,4300146,1,1,True
+Push-T lowdim seed43,4300147,1,1,True
+Push-T lowdim seed43,4300148,1,1,True
+Push-T lowdim seed43,4300149,1,1,True
+Push-T lowdim seed44,4300100,1,1,True
+Push-T lowdim seed44,4300101,1,1,True
+Push-T lowdim seed44,4300102,1,1,True
+Push-T lowdim seed44,4300103,1,1,True
+Push-T lowdim seed44,4300104,1,1,True
+Push-T lowdim seed44,4300105,1,1,True
+Push-T lowdim seed44,4300106,1,1,True
+Push-T lowdim seed44,4300107,1,1,True
+Push-T lowdim seed44,4300108,1,1,True
+Push-T lowdim seed44,4300109,1,1,True
+Push-T lowdim seed44,4300110,1,1,True
+Push-T lowdim seed44,4300111,1,1,True
+Push-T lowdim seed44,4300112,1,1,True
+Push-T lowdim seed44,4300113,1,1,True
+Push-T lowdim seed44,4300114,1,1,True
+Push-T lowdim seed44,4300115,1,1,True
+Push-T lowdim seed44,4300116,1,1,True
+Push-T lowdim seed44,4300117,1,1,True
+Push-T lowdim seed44,4300118,1,1,True
+Push-T lowdim seed44,4300119,1,1,True
+Push-T lowdim seed44,4300120,1,1,True
+Push-T lowdim seed44,4300121,1,1,True
+Push-T lowdim seed44,4300122,1,1,True
+Push-T lowdim seed44,4300123,1,1,True
+Push-T lowdim seed44,4300124,1,1,True
+Push-T lowdim seed44,4300125,1,1,True
+Push-T lowdim seed44,4300126,1,1,True
+Push-T lowdim seed44,4300127,1,1,True
+Push-T lowdim seed44,4300128,1,1,True
+Push-T lowdim seed44,4300129,1,1,True
+Push-T lowdim seed44,4300130,1,1,True
+Push-T lowdim seed44,4300131,1,1,True
+Push-T lowdim seed44,4300132,1,1,True
+Push-T lowdim seed44,4300133,1,1,True
+Push-T lowdim seed44,4300134,1,1,True
+Push-T lowdim seed44,4300135,1,1,True
+Push-T lowdim seed44,4300136,1,1,True
+Push-T lowdim seed44,4300137,1,1,True
+Push-T lowdim seed44,4300138,1,1,True
+Push-T lowdim seed44,4300139,1,1,True
+Push-T lowdim seed44,4300140,1,1,True
+Push-T lowdim seed44,4300141,1,1,True
+Push-T lowdim seed44,4300142,1,1,True
+Push-T lowdim seed44,4300143,1,1,True
+Push-T lowdim seed44,4300144,1,1,True
+Push-T lowdim seed44,4300145,1,1,True
+Push-T lowdim seed44,4300146,1,1,True
+Push-T lowdim seed44,4300147,1,1,True
+Push-T lowdim seed44,4300148,1,1,True
+Push-T lowdim seed44,4300149,1,1,True
+BlockPush lowdim,4400100,1,1,True
+BlockPush lowdim,4400101,1,1,True
+BlockPush lowdim,4400102,1,1,True
+BlockPush lowdim,4400103,1,1,True
+BlockPush lowdim,4400104,1,1,True
+BlockPush lowdim,4400105,1,1,True
+BlockPush lowdim,4400106,1,1,True
+BlockPush lowdim,4400107,1,1,True
+BlockPush lowdim,4400108,1,1,True
+BlockPush lowdim,4400109,1,1,True
+BlockPush lowdim,4400110,1,1,True
+BlockPush lowdim,4400111,1,1,True
+BlockPush lowdim,4400112,1,1,True
+BlockPush lowdim,4400113,1,1,True
+BlockPush lowdim,4400114,1,1,True
+BlockPush lowdim,4400115,1,1,True
+BlockPush lowdim,4400116,1,1,True
+BlockPush lowdim,4400117,1,1,True
+BlockPush lowdim,4400118,1,1,True
+BlockPush lowdim,4400119,1,1,True
+BlockPush lowdim,4400120,1,1,True
+BlockPush lowdim,4400121,1,1,True
+BlockPush lowdim,4400122,1,1,True
+BlockPush lowdim,4400123,1,1,True
+BlockPush lowdim,4400124,1,1,True
+BlockPush lowdim,4400125,1,1,True
+BlockPush lowdim,4400126,1,1,True
+BlockPush lowdim,4400127,1,1,True
+BlockPush lowdim,4400128,1,1,True
+BlockPush lowdim,4400129,1,1,True
+BlockPush lowdim,4400130,1,1,True
+BlockPush lowdim,4400131,1,1,True
+BlockPush lowdim,4400132,1,1,True
+BlockPush lowdim,4400133,1,1,True
+BlockPush lowdim,4400134,1,1,True
+BlockPush lowdim,4400135,1,1,True
+BlockPush lowdim,4400136,1,1,True
+BlockPush lowdim,4400137,1,1,True
+BlockPush lowdim,4400138,1,1,True
+BlockPush lowdim,4400139,1,1,True
+BlockPush lowdim,4400140,1,1,True
+BlockPush lowdim,4400141,1,1,True
+BlockPush lowdim,4400142,1,1,True
+BlockPush lowdim,4400143,1,1,True
+BlockPush lowdim,4400144,1,1,True
+BlockPush lowdim,4400145,1,1,True
+BlockPush lowdim,4400146,1,1,True
+BlockPush lowdim,4400147,1,1,True
+BlockPush lowdim,4400148,1,1,True
+BlockPush lowdim,4400149,1,1,True
+Push-T image seed42,4500200,1,1,True
+Push-T image seed42,4500201,1,1,True
+Push-T image seed42,4500202,1,1,True
+Push-T image seed42,4500203,1,1,True
+Push-T image seed42,4500204,1,1,True
+Push-T image seed42,4500205,1,1,True
+Push-T image seed42,4500206,1,1,True
+Push-T image seed42,4500207,1,1,True
+Push-T image seed42,4500208,1,1,True
+Push-T image seed42,4500209,1,1,True
+Push-T image seed42,4500210,1,1,True
+Push-T image seed42,4500211,1,1,True
+Push-T image seed42,4500212,1,1,True
+Push-T image seed42,4500213,1,1,True
+Push-T image seed42,4500214,1,1,True
+Push-T image seed42,4500215,1,1,True
+Push-T image seed42,4500216,1,1,True
+Push-T image seed42,4500217,1,1,True
+Push-T image seed42,4500218,1,1,True
+Push-T image seed42,4500219,1,1,True
+Push-T image seed42,4500220,1,1,True
+Push-T image seed42,4500221,1,1,True
+Push-T image seed42,4500222,1,1,True
+Push-T image seed42,4500223,1,1,True
+Push-T image seed42,4500224,1,1,True
+Push-T image seed42,4500225,1,1,True
+Push-T image seed42,4500226,1,1,True
+Push-T image seed42,4500227,1,1,True
+Push-T image seed42,4500228,1,1,True
+Push-T image seed42,4500229,1,1,True
+Push-T image seed42,4500230,1,1,True
+Push-T image seed42,4500231,1,1,True
+Push-T image seed42,4500232,1,1,True
+Push-T image seed42,4500233,1,1,True
+Push-T image seed42,4500234,1,1,True
+Push-T image seed42,4500235,1,1,True
+Push-T image seed42,4500236,1,1,True
+Push-T image seed42,4500237,1,1,True
+Push-T image seed42,4500238,1,1,True
+Push-T image seed42,4500239,1,1,True
+Push-T image seed42,4500240,1,1,True
+Push-T image seed42,4500241,1,1,True
+Push-T image seed42,4500242,1,1,True
+Push-T image seed42,4500243,1,1,True
+Push-T image seed42,4500244,1,1,True
+Push-T image seed42,4500245,1,1,True
+Push-T image seed42,4500246,1,1,True
+Push-T image seed42,4500247,1,1,True
+Push-T image seed42,4500248,1,1,True
+Push-T image seed42,4500249,1,1,True
+Push-T image seed43,4500300,1,1,True
+Push-T image seed43,4500301,1,1,True
+Push-T image seed43,4500302,1,1,True
+Push-T image seed43,4500303,1,1,True
+Push-T image seed43,4500304,1,1,True
+Push-T image seed43,4500305,1,1,True
+Push-T image seed43,4500306,1,1,True
+Push-T image seed43,4500307,1,1,True
+Push-T image seed43,4500308,1,1,True
+Push-T image seed43,4500309,1,1,True
+Push-T image seed43,4500310,1,1,True
+Push-T image seed43,4500311,1,1,True
+Push-T image seed43,4500312,1,1,True
+Push-T image seed43,4500313,1,1,True
+Push-T image seed43,4500314,1,1,True
+Push-T image seed43,4500315,1,1,True
+Push-T image seed43,4500316,1,1,True
+Push-T image seed43,4500317,1,1,True
+Push-T image seed43,4500318,1,1,True
+Push-T image seed43,4500319,1,1,True
+Push-T image seed43,4500320,1,1,True
+Push-T image seed43,4500321,1,1,True
+Push-T image seed43,4500322,1,1,True
+Push-T image seed43,4500323,1,1,True
+Push-T image seed43,4500324,1,1,True
+Push-T image seed43,4500325,1,1,True
+Push-T image seed43,4500326,1,1,True
+Push-T image seed43,4500327,1,1,True
+Push-T image seed43,4500328,1,1,True
+Push-T image seed43,4500329,1,1,True
+Push-T image seed43,4500330,1,1,True
+Push-T image seed43,4500331,1,1,True
+Push-T image seed43,4500332,1,1,True
+Push-T image seed43,4500333,1,1,True
+Push-T image seed43,4500334,1,1,True
+Push-T image seed43,4500335,1,1,True
+Push-T image seed43,4500336,1,1,True
+Push-T image seed43,4500337,1,1,True
+Push-T image seed43,4500338,1,1,True
+Push-T image seed43,4500339,1,1,True
+Push-T image seed43,4500340,1,1,True
+Push-T image seed43,4500341,1,1,True
+Push-T image seed43,4500342,1,1,True
+Push-T image seed43,4500343,1,1,True
+Push-T image seed43,4500344,1,1,True
+Push-T image seed43,4500345,1,1,True
+Push-T image seed43,4500346,1,1,True
+Push-T image seed43,4500347,1,1,True
+Push-T image seed43,4500348,1,1,True
+Push-T image seed43,4500349,1,1,True
+Push-T image seed44,4500400,1,1,True
+Push-T image seed44,4500401,1,1,True
+Push-T image seed44,4500402,1,1,True
+Push-T image seed44,4500403,1,1,True
+Push-T image seed44,4500404,1,1,True
+Push-T image seed44,4500405,1,1,True
+Push-T image seed44,4500406,1,1,True
+Push-T image seed44,4500407,1,1,True
+Push-T image seed44,4500408,1,1,True
+Push-T image seed44,4500409,1,1,True
+Push-T image seed44,4500410,1,1,True
+Push-T image seed44,4500411,1,1,True
+Push-T image seed44,4500412,1,1,True
+Push-T image seed44,4500413,1,1,True
+Push-T image seed44,4500414,1,1,True
+Push-T image seed44,4500415,1,1,True
+Push-T image seed44,4500416,1,1,True
+Push-T image seed44,4500417,1,1,True
+Push-T image seed44,4500418,1,1,True
+Push-T image seed44,4500419,1,1,True
+Push-T image seed44,4500420,1,1,True
+Push-T image seed44,4500421,1,1,True
+Push-T image seed44,4500422,1,1,True
+Push-T image seed44,4500423,1,1,True
+Push-T image seed44,4500424,1,1,True
+Push-T image seed44,4500425,1,1,True
+Push-T image seed44,4500426,1,1,True
+Push-T image seed44,4500427,1,1,True
+Push-T image seed44,4500428,1,1,True
+Push-T image seed44,4500429,1,1,True
+Push-T image seed44,4500430,1,1,True
+Push-T image seed44,4500431,1,1,True
+Push-T image seed44,4500432,1,1,True
+Push-T image seed44,4500433,1,1,True
+Push-T image seed44,4500434,1,1,True
+Push-T image seed44,4500435,1,1,True
+Push-T image seed44,4500436,1,1,True
+Push-T image seed44,4500437,1,1,True
+Push-T image seed44,4500438,1,1,True
+Push-T image seed44,4500439,1,1,True
+Push-T image seed44,4500440,1,1,True
+Push-T image seed44,4500441,1,1,True
+Push-T image seed44,4500442,1,1,True
+Push-T image seed44,4500443,1,1,True
+Push-T image seed44,4500444,1,1,True
+Push-T image seed44,4500445,1,1,True
+Push-T image seed44,4500446,1,1,True
+Push-T image seed44,4500447,1,1,True
+Push-T image seed44,4500448,1,1,True
+Push-T image seed44,4500449,1,1,True

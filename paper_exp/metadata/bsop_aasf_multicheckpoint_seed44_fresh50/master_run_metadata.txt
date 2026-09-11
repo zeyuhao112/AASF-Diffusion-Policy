@@ -1,0 +1,59 @@
+run_name=bsop_aasf_multicheckpoint_seed44_fresh50
+status=started
+started_utc=2026-08-07T06:28:55Z
+frozen_tag=bsop-aasf-confirmatory-frozen-20260805
+frozen_commit=01ee28858cc3cc8a46438351f559cc1b8221afac
+head_commit=01ee28858cc3cc8a46438351f559cc1b8221afac
+start_seed=4300100
+end_seed=4300149
+n_test=50
+n_envs=1
+policy_seed_salt=20260710
+checkpoint=data/outputs/pusht_lowdim_seed44_epoch550/checkpoints/latest.ckpt
+checkpoint_sha256=6d8042aa0e1957b5230fb88726f93fb3d8b7201a7ae79cd1a766f83dad5d32c6
+protocol=paper_artifacts/code/bsop_aasf_confirmatory_protocol_locked.md
+protocol_sha256=be0caf893b25ac8da7f8a476ab1833aec6170e830a30c6764d44c1c3bc5be2dd
+python_bin=/root/miniconda3/bin/python
+
+[Frozen file SHA256]
+3d1664475f1ade6b0e684b5e18a837866566c9166160400e5a107d8b4db7a5da  diffusion_policy/env_runner/pusht_keypoints_runner.py
+e2a6918005f54832988c3174d9bad7b1243dfa6afcf5f07ecd59864b72c9644d  diffusion_policy/gym_util/async_vector_env.py
+aa753369eb146697da2089798e4d6d8657ff0ebb425dfc5cfbc5b5c05f2109d1  diffusion_policy/policy/diffusion_unet_lowdim_policy.py
+a0cabc84a8c4dc1ff6ec7b43d859ba611e67a437ba263922c523ca6cf0243b67  eval.py
+be0caf893b25ac8da7f8a476ab1833aec6170e830a30c6764d44c1c3bc5be2dd  paper_artifacts/code/bsop_aasf_confirmatory_protocol_locked.md
+6d8042aa0e1957b5230fb88726f93fb3d8b7201a7ae79cd1a766f83dad5d32c6  data/outputs/pusht_lowdim_seed44_epoch550/checkpoints/latest.ckpt
+
+[Python]
+Python 3.8.10
+
+[Package versions]
+numpy=1.24.2
+torch=2.0.0+cu118
+diffusers=0.11.1
+gym=0.23.1
+
+[GPU]
+Fri Aug  7 14:29:02 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.76.05              Driver Version: 580.76.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  |   00000000:41:00.0 Off |                  N/A |
+| 30%   30C    P8             35W /  350W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+finished_utc=2026-08-07T07:40:57Z
+status=completed
+artifact_manifest=/root/autodl-tmp/projects/diffusion_policy/paper_exp/metadata/bsop_aasf_multicheckpoint_seed44_fresh50/all_artifact_sha256.txt

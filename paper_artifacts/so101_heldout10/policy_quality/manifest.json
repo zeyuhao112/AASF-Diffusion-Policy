@@ -1,0 +1,38 @@
+{
+  "checkpoint": "/root/autodl-tmp/outputs/so101_diffusion_train40_seed1000/checkpoints/020000/pretrained_model",
+  "raw_export": "/root/autodl-tmp/so101_heldout10_boundary_export_train40_20k_v1",
+  "dataset_root": "/root/autodl-tmp/so101_split_40_10_v1/heldout10",
+  "repo_id": "lerobot/svla_so101_pickplace_heldout10",
+  "model_sha256": "c0001423c9a09fd4baf3f639654cc1320c6d152828e516f2b9f7c75c83ce6df4",
+  "config_sha256": "f88b0539406cd500249c76f0f70aa9508068ca8e57bdcff22577b0b070ceac96",
+  "episodes": 10,
+  "queries": 273,
+  "action_dim": 6,
+  "action_offsets": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "first_exec_index": 1,
+  "y_data_index": 0,
+  "normalization_source": "train40 20k checkpoint policy preprocessor",
+  "policy_resampled": false,
+  "outputs": {
+    "per_query": "/root/autodl-tmp/so101_heldout10_policy_quality_train40_20k_v1/policy_quality_per_query.csv",
+    "per_episode": "/root/autodl-tmp/so101_heldout10_policy_quality_train40_20k_v1/policy_quality_per_episode.csv",
+    "summary": "/root/autodl-tmp/so101_heldout10_policy_quality_train40_20k_v1/summary.json"
+  }
+}

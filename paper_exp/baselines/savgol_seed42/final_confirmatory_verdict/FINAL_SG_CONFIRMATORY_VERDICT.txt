@@ -1,0 +1,122 @@
+===== FINAL SAVITZKY-GOLAY CONFIRMATORY VERDICT =====
+
+study = Push-T low-dimensional Savitzky-Golay baseline
+training_checkpoint = seed42
+
+formal_reference_method = original
+formal_selected_method = w5_p3
+selected_window = 5
+selected_polyorder = 3
+savgol_mode = interp
+
+formal_seed_start = 4300100
+formal_seed_end = 4300149
+formal_seed_count = 50
+paired_comparison_count = 50
+
+===== PROTOCOL COMPLIANCE =====
+
+selected_configuration_was_frozen_before_confirmatory = YES
+only_selected_SG_configuration_evaluated = YES
+alternative_SG_configurations_after_unblinding = NONE
+post_unblind_retuning = NONE
+
+BSOP = disabled
+Temporal_Ensemble = disabled
+EMA = disabled
+AASF = disabled
+SMA = disabled
+
+formal_rollout_artifact_manifest = PASS
+formal_analysis_manifest = PASS
+frozen_submission_archive = PASS
+
+PROTOCOL_COMPLIANCE = PASS
+
+===== TASK PERFORMANCE =====
+
+original_mean_score = 0.9317484632978225
+sg_mean_score = 0.9307782575669161
+
+mean_paired_score_difference = -0.0009702057309062595
+paired_score_difference_ci95_low = -0.006965687115603184
+paired_score_difference_ci95_high = 0.004210972674379012
+
+original_SR90 = 46/50
+sg_SR90 = 45/50
+SR90_count_difference = -1
+
+original_exact_score_1p0 = 27/50
+sg_exact_score_1p0 = 27/50
+exact_score_1p0_difference = 0
+
+===== SMOOTHNESS =====
+
+boundary_D1_reduction_pct_mean = 2.7941100397493734
+boundary_D1_reduction_pct_ci95_low = 0.5887893402091813
+boundary_D1_reduction_pct_ci95_high = 5.1878707331346625
+
+D1_reduction_pct_mean = 1.1226745481940055
+D1_reduction_pct_ci95_low = 0.05217672542860624
+D1_reduction_pct_ci95_high = 2.284320477083047
+
+D2_reduction_pct_mean = 8.309006950414988
+D2_reduction_pct_ci95_low = 6.809266207344838
+D2_reduction_pct_ci95_high = 9.934805066536695
+
+D3_reduction_pct_mean = 15.510703227764628
+D3_reduction_pct_ci95_low = 14.0086914321099
+D3_reduction_pct_ci95_high = 17.139021907686192
+
+control_dt_s = 0.1
+
+C1_reduction_pct_mean = 1.122674548194003
+C1_reduction_pct_ci95_low = 0.05115324021427516
+C1_reduction_pct_ci95_high = 2.286890209752846
+
+C2_reduction_pct_mean = 8.309006950414988
+C2_reduction_pct_ci95_low = 6.805840157801492
+C2_reduction_pct_ci95_high = 9.933385059381775
+
+C3_reduction_pct_mean = 15.510703227764632
+C3_reduction_pct_ci95_low = 14.013233904228317
+C3_reduction_pct_ci95_high = 17.132457252102963
+
+===== CONFIRMATORY INTERPRETATION =====
+
+boundary_D1_ci95_entirely_above_zero = YES
+D1_ci95_entirely_above_zero = YES
+D2_ci95_entirely_above_zero = YES
+D3_ci95_entirely_above_zero = YES
+
+paired_score_difference_ci95_contains_zero = YES
+SR90_decreased_by_one_episode = YES
+exact_score_1p0_count_changed = NO
+
+The frozen selected Savitzky-Golay configuration produced positive
+confirmatory reductions in own-trajectory Boundary D1 and common-prefix
+D1, D2, and D3. The 95% paired bootstrap confidence intervals for all
+four smoothness reductions are above zero.
+
+The paired mean task-score difference was -0.0009702 and its 95%
+bootstrap confidence interval included zero. SR@0.90 changed from
+46/50 to 45/50, while the exact-score-1.0 count remained 27/50.
+
+Task performance and smoothness are therefore reported separately,
+as required by the frozen protocol.
+
+The frozen protocol did not specify a post-confirmatory binary
+effect-size success threshold. No new binary success criterion is
+introduced after unblinding.
+
+===== FINAL STATUS =====
+
+FORMAL_CONFIRMATORY_EXECUTION = COMPLETE
+FORMAL_CONFIRMATORY_ANALYSIS = COMPLETE
+FORMAL_CONFIRMATORY_PROTOCOL_COMPLIANCE = PASS
+
+ALTERNATIVE_SG_CONFIG_EXECUTION_AFTER_UNBLINDING = NO
+POST_UNBLIND_RETUNING = NO
+NEW_HYPERPARAMETER_SEARCH = NO
+
+RESULT_INTERPRETATION_FROZEN = YES

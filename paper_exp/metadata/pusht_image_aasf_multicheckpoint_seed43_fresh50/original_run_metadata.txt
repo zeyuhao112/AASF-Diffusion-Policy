@@ -1,0 +1,12 @@
+method=original
+status=started
+condition=Push-T image seed43 / epoch1450
+start_seed=4700100
+end_seed=4700149
+n_test=50
+runner_sha256=8f0a009d55e80ff586c626e1f6f5667227eb66952ae4e6542fbcccf371bbe4da
+checkpoint_sha256=7d5824bfaa95358e8f31921b8b5d46e7603dcf320053111785c440161df804dd
+DP_N_ENVS=1
+DP_PAIRED_POLICY_SEED=1
+DP_POLICY_SEED_SALT=20260710
+BSOP_enabled=NO

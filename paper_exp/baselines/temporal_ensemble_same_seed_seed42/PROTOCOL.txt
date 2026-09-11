@@ -1,0 +1,39 @@
+===== TE SAME-SEED STRICT PAIRED AUXILIARY REFERENCE PROTOCOL =====
+
+purpose =
+run frozen Temporal Ensemble beta=2.0 on the already-used
+Push-T LD seed42 formal seed set 4300100-4300149 so that TE
+can be compared against existing Original, SG, and BSOP+AASF
+on exactly the same paired episodes.
+
+status =
+auxiliary same-seed paired reference
+not a new TE beta-selection study
+not a replacement for the independent TE confirmatory study
+
+checkpoint =
+data/checkpoints/pusht.ckpt
+
+seed_set =
+4300100-4300149
+
+new_rollout =
+te_beta_2p0 only
+
+existing references =
+Original: paper_artifacts/traces/bsop_aasf_confirmatory_fresh50/original
+SG w5_p3: paper_exp/savgol_baseline_seed42/formal_confirmatory/traces/w5_p3
+BSOP+AASF: paper_artifacts/traces/bsop_aasf_confirmatory_fresh50/bsop_aasf
+
+frozen_TE_selection =
+selected_beta = 2.0
+selected_method = te_beta_2p0
+DP_TE_MAX_HISTORY = 1
+
+no_rerun =
+Original
+SG
+BSOP+AASF
+
+no_parameter_selection = YES
+post_unblind_retuning = NO

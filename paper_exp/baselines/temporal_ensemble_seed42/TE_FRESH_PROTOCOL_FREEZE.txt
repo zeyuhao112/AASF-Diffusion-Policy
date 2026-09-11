@@ -1,0 +1,154 @@
+===== FRESH TEMPORAL ENSEMBLE BASELINE PROTOCOL =====
+
+study = Push-T low-dimensional Temporal Ensemble baseline
+training_checkpoint = seed42
+
+===== FROZEN INPUT IDENTITIES =====
+
+runner = diffusion_policy/env_runner/pusht_keypoints_runner.py
+runner_sha256 = 02e6a88caf26cf3a7509034f95a1e896a782274d37b1d9965253ac6ebf4a245d
+
+temporal_ensemble_core = diffusion_policy/common/temporal_ensemble.py
+temporal_ensemble_core_sha256 = 27c3c44c265add75fb5fae5bb20c686611e765c5f6e8c376efcc27f574b4aebe
+
+alignment_test = paper_exp/scripts/test_temporal_ensemble_alignment.py
+alignment_test_sha256 = 2a06570e399348609eb080778a6d4c97600236ecd56d77877d2917ff90a5e6bb
+
+checkpoint = data/checkpoints/pusht.ckpt
+checkpoint_sha256 = f804e16575e261fa0b7e981da3f67741fc8517817734320d550e43a4182bf876
+
+eval = eval.py
+eval_sha256 = a0cabc84a8c4dc1ff6ec7b43d859ba611e67a437ba263922c523ca6cf0243b67
+
+===== TEMPORAL ENSEMBLE DEFINITION =====
+
+alignment = absolute actually-executed control-step index
+weight = exp(-beta * query_age)
+
+DP_TE_MAX_HISTORY = 1
+
+effective_history_interpretation =
+one previous policy query plus current query
+
+===== GEOMETRY AUDIT =====
+
+legacy_geometry_audit_seed_start = 4300050
+legacy_geometry_audit_seed_end = 4300069
+legacy_geometry_audit_seed_count = 20
+
+diagnostic_trace_count = 20
+total_query_chunk_points = 4616
+global_max_source_age = 1
+global_max_candidate_count = 2
+
+single_candidate_points = 717
+two_candidate_points = 3899
+points_with_source_age_ge_2 = 0
+points_with_source_age_ge_3 = 0
+
+DP_TE_MAX_HISTORY_1_IS_GEOMETRICALLY_COMPLETE = YES
+HISTORY_DEPTH_GRID = FORBIDDEN
+
+===== DEVELOPMENT =====
+
+development_seed_start = 4800000
+development_seed_end = 4800019
+development_seed_count = 20
+
+development_reference = original
+
+development_beta_grid =
+0.0
+0.5
+1.0
+2.0
+4.0
+
+development_TE_candidate_count = 5
+development_original_episode_count = 20
+development_TE_episode_count = 100
+development_total_episode_count = 120
+
+DP_PAIRED_POLICY_SEED = 1
+DP_POLICY_SEED_SALT = 20260710
+
+BSOP = disabled
+Savitzky_Golay = disabled
+EMA = disabled
+AASF = disabled
+SMA = disabled
+
+===== DEVELOPMENT ELIGIBILITY =====
+
+mean_paired_score_difference >= -0.01
+
+SR90_threshold = 0.90
+maximum_SR90_count_decrease = 1 episode out of 20
+
+===== DEVELOPMENT SELECTION =====
+
+primary_selection_metric =
+mean paired Boundary-D1 reduction percentage
+
+Boundary-D1 =
+own-trajectory first-difference magnitude
+at actual policy-query execution boundaries
+
+selection_precision_decimals = 6
+
+selection_rule =
+1. retain only eligible beta values
+2. maximize mean paired Boundary-D1 reduction percentage
+   rounded to six decimal places
+3. exact six-decimal tie: choose the smaller beta
+
+confirmatory_data_must_not_be_used_for_selection = YES
+
+===== FORMAL CONFIRMATORY =====
+
+formal_seed_start = 4800100
+formal_seed_end = 4800149
+formal_seed_count = 50
+
+formal_arms = 2
+formal_reference = original
+formal_comparison = development-selected TE only
+
+formal_original_episode_count = 50
+formal_selected_TE_episode_count = 50
+formal_total_episode_count = 100
+
+alternative_beta_evaluation_after_unblinding = FORBIDDEN
+post_unblind_retuning = FORBIDDEN
+new_hyperparameter_search_after_unblinding = FORBIDDEN
+
+===== FORMAL METRICS =====
+
+task_metrics =
+paired score difference
+SR@0.90
+exact score 1.0 count
+
+smoothness_metrics =
+own-trajectory Boundary-D1
+paired-common-prefix D1
+paired-common-prefix D2
+paired-common-prefix D3
+
+control_dt_s = 0.1
+
+time_normalized_metrics =
+C1
+C2
+C3
+
+task_performance_and_smoothness_reported_separately = YES
+
+===== CURRENT STATUS =====
+
+protocol_frozen_before_fresh_development = YES
+fresh_development_seeds_accessed = NO
+fresh_confirmatory_seeds_accessed = NO
+fresh_TE_parameter_selection_performed = NO
+fresh_TE_confirmatory_unblinded = NO
+policy_rollout_performed_by_protocol_freeze = NO

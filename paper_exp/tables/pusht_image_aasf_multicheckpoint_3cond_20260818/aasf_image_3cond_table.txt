@@ -1,0 +1,10 @@
+AASF zero-retuning image replication across three Push-T image checkpoints
+=====================================================
+
+Condition | ΔScore [95% CI] | SR@0.90 | D1/C1 | D2/C2 | D3/C3
+-----------------------------------------------------
+Push-T image seed42 / epoch0500 | -0.0530 [-0.1287,+0.0241] | -10 pp [-22,+2] | +10.26% [+7.29,+13.28] | +17.44% [+12.89,+21.59] | +16.14% [+10.75,+21.00]
+Push-T image seed43 / epoch1450 | -0.0224 [-0.0683,+0.0270] | -10 pp [-22,+2] | +6.87% [+3.62,+10.06] | +16.19% [+11.30,+20.27] | +15.21% [+9.77,+20.12]
+Push-T image seed44 / epoch1850 | +0.0392 [-0.0239,+0.1043] | +10 pp [+0,+20] | +7.87% [+5.38,+10.47] | +21.52% [+18.47,+24.50] | +21.63% [+18.09,+25.11]
+
+Notes: positive D/C reductions indicate smoother AASF commands. C1-C3 percentage reductions are identical to D1-D3 because dt=0.1 is a positive constant scaling. BSOP is disabled in all rows.

@@ -1,62 +1,32 @@
-# Reproducibility Notes
+# Reproducibility notes
 
-## Included in this core bundle
+The complete guide is [`docs/AASF_BSOP_REPRODUCIBILITY.md`](docs/AASF_BSOP_REPRODUCIBILITY.md).
 
-- Final AASF and Original implementation files.
-- Evaluation runner and baseline execution script.
-- Environment specification.
-- Original and AASF final evaluation logs.
-- All final statistical-analysis scripts.
-- Final CSV, JSON, text, and console reports.
-- Manuscript-ready PNG and PDF figures.
-- SHA-256 manifests.
+## Included
 
-## Raw trace policy
+- Frozen AASF, BSOP, SG, and Temporal Ensemble implementation files.
+- Final condition-specific and seven-condition analysis scripts.
+- Compact per-seed tables, statistical outputs, and frozen manifests.
+- SG and TE development/confirmatory records.
+- Final post-processing timing microbenchmark.
+- Compact Franka simulated-replay results.
+- SO-101 split, checkpoint configuration, 10 held-out boundary arrays, and
+  offline audit results.
 
-The 200 per-episode NPZ traces are intentionally excluded from this
-lightweight core archive. Their paths and SHA-256 values are recorded in:
+## Excluded
 
-`paper_exp/tables/crn_final_trace_inputs.sha256`
+- Model weights and optimizer tensors.
+- Source datasets, video files, and server caches.
+- Bulk raw simulation traces and Franka time-series files.
+- Failed/retry runs, PID files, and superseded backups.
 
-The expected source directories are:
-
-- `paper_artifacts/traces/crn_final_original_100`
-- `paper_artifacts/traces/crn_final_aasf_100`
-
-The raw traces should be archived separately or uploaded as a repository
-release / institutional-data supplement.
-
-## Analysis commands
-
-Run commands from the repository root.
-
-Task-performance analysis:
+Raw data should be restored in the paths documented by the full guide. Validate
+the repository payload with:
 
 ```bash
-python paper_exp/scripts/crn_final_paired_analysis.py
+sha256sum -c AASF_BSOP_V1.1.0_MANIFEST.sha256
 ```
 
-Timing, adaptive-coefficient, and representative-episode analysis:
-
-```bash
-python paper_exp/scripts/crn_final_trace_analysis.py
-```
-
-Paired D1, D2, and D3 analysis:
-
-```bash
-python paper_exp/scripts/crn_final_smoothness_paired_analysis.py
-```
-
-## Statistical interpretation
-
-- Smoothness reductions are defined as Original minus AASF, so positive
-  values indicate improvement.
-- Holm correction is applied across D1, D2, and D3.
-- The score analysis did not detect a statistically significant
-  difference.
-- Absence of significance must not be described as proof of equivalence
-  or non-inferiority.
-- The measured AASF contribution is its net post-processing overhead;
-  separate policy-inference timing differences are not algorithmic
-  acceleration.
+Absence of a statistically significant score difference is not proof of
+equivalence or non-inferiority. SO-101 results are teacher-forced offline
+trajectory results, and Franka results are simulated dynamics replay.

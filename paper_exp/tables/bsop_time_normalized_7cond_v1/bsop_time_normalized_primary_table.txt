@@ -1,0 +1,15 @@
+===== BSOP TIME-NORMALIZED COMMAND METRICS =====
+
+All trajectories use the actual executed command stream at 10 Hz (dt = 0.1 s).
+C1, C2, and C3 denote first-, second-, and third-order finite differences divided by dt, dt^2, and dt^3, respectively.
+These are command-space rate, acceleration, and jerk proxies; they are not direct measurements of physical link acceleration, torque, or mechanical jerk.
+
+Condition                 dScore [95% CI]            Boundary% [95% CI]                 C1%      C2%      C3%
+-------------------------------------------------------------------------------------------------------------
+Push-T lowdim seed42      +0.0017 [-0.0033,+0.0066]  +20.14 [+16.99,+23.27]           -1.28    +7.54   +14.16
+Push-T lowdim seed43      -0.0007 [-0.0563,+0.0549]  +15.90 [+10.07,+20.84]           -0.47    +5.79   +12.50
+Push-T lowdim seed44      -0.0233 [-0.0905,+0.0346]  +13.35 [+5.04,+20.19]            +0.56    +5.84   +11.75
+BlockPush lowdim          -0.0004 [-0.0824,+0.0800]  +16.86 [+11.84,+21.54]           +1.36    +4.00    +8.00
+Push-T image seed42       +0.0239 [-0.0254,+0.0772]  +15.74 [+12.05,+19.45]           +2.13    +6.94   +12.01
+Push-T image seed43       -0.0224 [-0.0455,-0.0027]  +13.99 [+10.49,+17.47]           -0.29    +4.62    +9.92
+Push-T image seed44       +0.0126 [-0.0285,+0.0581]  +12.70 [+9.44,+15.93]            +1.02    +6.37   +10.26

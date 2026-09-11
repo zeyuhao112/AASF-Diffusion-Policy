@@ -1,0 +1,19 @@
+===== SG FROZEN SELECTION AUDIT =====
+selection_source=frozen development analysis
+eligible_count=8
+selection_rule_1=maximize eligible mean paired own-trajectory Boundary-D1 reduction
+selection_rule_1_precision=six decimal places
+selection_rule_2=maximize mean paired common-prefix D3 reduction among Boundary ties
+selection_rule_3=choose smaller window among remaining ties
+selection_rule_4=choose lower polyorder among remaining ties
+boundary_tie_count=1
+d3_tie_count=1
+final_tie_count=1
+selected_method=w5_p3
+selected_window=5
+selected_polyorder=3
+confirmatory_data_accessed=NO
+confirmatory_evaluation_performed=NO
+post_unblind_retuning=NO
+
+SG_FROZEN_SELECTION_AUDIT = PASS

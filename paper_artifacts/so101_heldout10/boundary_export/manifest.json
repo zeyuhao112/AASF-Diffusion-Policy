@@ -1,0 +1,107 @@
+{
+  "checkpoint": "/root/autodl-tmp/outputs/so101_diffusion_train40_seed1000/checkpoints/020000/pretrained_model",
+  "dataset": "lerobot/svla_so101_pickplace_heldout10",
+  "dataset_root": "/root/autodl-tmp/so101_split_40_10_v1/heldout10",
+  "split_manifest": "/root/autodl-tmp/so101_split_40_10_v1/split_manifest.json",
+  "heldout_original_episode_indices": [
+    1,
+    3,
+    8,
+    11,
+    14,
+    19,
+    22,
+    38,
+    39,
+    47
+  ],
+  "normalization_provenance": "policy preprocessor loaded from train40 checkpoint; heldout dataset statistics are not used to construct the policy preprocessor",
+  "device": "cuda",
+  "model_sha256": "c0001423c9a09fd4baf3f639654cc1320c6d152828e516f2b9f7c75c83ce6df4",
+  "config_sha256": "f88b0539406cd500249c76f0f70aa9508068ca8e57bdcff22577b0b070ceac96",
+  "torch_version": "2.11.0+cu128",
+  "cuda_device": "NVIDIA GeForce RTX 4090",
+  "dataset_fps": 30.0,
+  "dataset_total_episodes": 10,
+  "dataset_total_frames": 2299,
+  "horizon": 16,
+  "n_obs_steps": 2,
+  "n_action_steps": 8,
+  "observation_offsets": [
+    -1,
+    0
+  ],
+  "action_offsets": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "first_exec_index": 1,
+  "last_exec_index": 8,
+  "data_y_index": 0,
+  "query_stride": 8,
+  "previous_aligned_index": 9,
+  "overlap_len": 7,
+  "base_query_seed": 20260825,
+  "seed_rule": "logical = base + episode*1000 + query_order; init_seed=2*logical; reverse_seed=2*logical+1",
+  "space": "full_norm and *_norm are checkpoint-native normalized action coordinates; full_native and *_native are postprocessor inverse-transformed dataset action coordinates.",
+  "boundary_semantics": {
+    "a": "current query first executable prediction at absolute t+8",
+    "p": "previous query time-aligned prediction for absolute t+8",
+    "y_data": "recorded robot action at absolute t+7",
+    "y_policy": "previous policy query's last executable prediction at absolute t+7"
+  },
+  "summary": {
+    "episodes": 10,
+    "queries": 273,
+    "boundaries": 263,
+    "query_disagreement_norm": {
+      "n": 263,
+      "mean": 0.33121903895085303,
+      "median": 0.25007209181785583,
+      "p95": 0.9086350560188281,
+      "max": 1.461917519569397
+    },
+    "overlap_mean_l2_norm": {
+      "n": 263,
+      "mean": 0.3521619930211809,
+      "median": 0.2567172348499298,
+      "p95": 0.9674115478992459,
+      "max": 1.4459394216537476
+    },
+    "raw_jump_data_ref_norm": {
+      "n": 263,
+      "mean": 0.1905323877477374,
+      "median": 0.13378559052944183,
+      "p95": 0.46541120111942286,
+      "max": 1.2158896923065186
+    },
+    "raw_jump_policy_ref_norm": {
+      "n": 263,
+      "mean": 0.33044086777721976,
+      "median": 0.2455853372812271,
+      "p95": 0.866880297660827,
+      "max": 1.4653350114822388
+    },
+    "prev_policy_vs_data_norm": {
+      "n": 263,
+      "mean": 0.3327531917905966,
+      "median": 0.24828006327152252,
+      "p95": 0.8184786915779112,
+      "max": 1.4604557752609253
+    }
+  }
+}

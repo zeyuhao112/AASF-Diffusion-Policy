@@ -1,0 +1,4 @@
+metric,max_abs_difference_pct,pass
+C1_vs_D1_reduction,2.842170943040401e-14,True
+C2_vs_D2_reduction,2.842170943040401e-14,True
+C3_vs_D3_reduction,2.842170943040401e-14,True

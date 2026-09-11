@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "method": "Scale-aware AASF",
+  "task": "Push-T",
+  "episodes": 50,
+  "frozen_parameters": {
+    "alpha": 0.8,
+    "alpha_min": 0.45,
+    "gain": 0.25,
+    "threshold_ratio_kappa": 1.2403473458920846,
+    "median_expert_step_norm": 8.06225774829855,
+    "computed_threshold": 10.0
+  },
+  "performance": {
+    "mean_score": 0.9316082842171266,
+    "sr_at_0.90": 0.92,
+    "sr_at_0.95": 0.92,
+    "fail_below_0.90": 4,
+    "action_delta_l2_mean": 8.946879153251649,
+    "action_acc_l2_mean": 6.635570592880249,
+    "action_jerk_l2_mean": 10.801349663734436,
+    "action_smoothness_score": 0.10031947018962922
+  },
+  "regression_checks": {
+    "test/mean_score": {
+      "actual": 0.9316082842171266,
+      "reference_fixed_threshold": 0.9316082842171266,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    "test/action_delta_l2_mean": {
+      "actual": 8.946879153251649,
+      "reference_fixed_threshold": 8.946879153251649,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    "test/action_acc_l2_mean": {
+      "actual": 6.635570592880249,
+      "reference_fixed_threshold": 6.635570592880249,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    "test/action_jerk_l2_mean": {
+      "actual": 10.801349663734436,
+      "reference_fixed_threshold": 10.801349663734436,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    "test/action_smoothness_score": {
+      "actual": 0.10031947018962922,
+      "reference_fixed_threshold": 0.10031947018962922,
+      "absolute_difference": 0.0,
+      "passed": true
+    }
+  },
+  "interpretation": "The scale-aware implementation exactly reproduces the frozen threshold=10 AASF result on Push-T."
+}

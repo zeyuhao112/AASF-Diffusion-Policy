@@ -1,0 +1,31 @@
+===== SG DEVELOPMENT SUMMARY AUDIT =====
+study=Savitzky-Golay development seed42
+development_seed_start=4300050
+development_seed_end=4300069
+development_seed_count=20
+candidate_count=8
+paired_row_count=160
+mean_score_difference_direction=SG_minus_Original
+mean_score_difference_floor=-0.01
+max_sr90_count_decrease=1
+eligible_count=8
+selection_performed=NO
+candidate_ranking_performed=NO
+confirmatory_data_accessed=NO
+post_unblind_retuning=NO
+
+max_C1_vs_D1_summary_error=8.8817841970012523e-15
+max_C2_vs_D2_summary_error=7.1054273576010019e-15
+max_C3_vs_D3_summary_error=7.1054273576010019e-15
+
+===== ELIGIBILITY IN FROZEN GRID ORDER =====
+w3_p1: window=3, polyorder=1, mean_score_diff=+0.048408338477, SR90=20/20, SR90_decrease=-1, Boundary_D1_red=-6.177422913882%, D3_red=+12.423412155868%, eligible=True
+w3_p2: window=3, polyorder=2, mean_score_diff=+0.000000000000, SR90=19/20, SR90_decrease=0, Boundary_D1_red=+0.000000000000%, D3_red=+0.000000000000%, eligible=True
+w5_p1: window=5, polyorder=1, mean_score_diff=+0.044373705425, SR90=20/20, SR90_decrease=-1, Boundary_D1_red=-28.442990496753%, D3_red=-5.147962626592%, eligible=True
+w5_p2: window=5, polyorder=2, mean_score_diff=+0.000951968222, SR90=19/20, SR90_decrease=0, Boundary_D1_red=+0.716641255661%, D3_red=+12.715543269232%, eligible=True
+w5_p3: window=5, polyorder=3, mean_score_diff=-0.002967824652, SR90=19/20, SR90_decrease=0, Boundary_D1_red=+5.412326923036%, D3_red=+15.831470471546%, eligible=True
+w7_p1: window=7, polyorder=1, mean_score_diff=-0.003344574813, SR90=19/20, SR90_decrease=0, Boundary_D1_red=-39.979271582970%, D3_red=-15.085286131128%, eligible=True
+w7_p2: window=7, polyorder=2, mean_score_diff=+0.003218413503, SR90=19/20, SR90_decrease=0, Boundary_D1_red=-8.413475261041%, D3_red=+5.084540494980%, eligible=True
+w7_p3: window=7, polyorder=3, mean_score_diff=+0.000850592484, SR90=19/20, SR90_decrease=0, Boundary_D1_red=+2.897920384380%, D3_red=+17.397141410731%, eligible=True
+
+SG_DEVELOPMENT_SUMMARY_AUDIT = PASS
