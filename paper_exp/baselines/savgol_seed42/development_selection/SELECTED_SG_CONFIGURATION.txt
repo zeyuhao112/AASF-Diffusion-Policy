@@ -1,0 +1,17 @@
+===== FROZEN SELECTED SG CONFIGURATION =====
+method=w5_p3
+window=5
+polyorder=3
+savgol_mode=interp
+action_chunk_axis=1
+action_chunk_length=8
+selection_boundary_precision_decimals=6
+boundary_D1_reduction_pct_mean=5.4123269230361748
+boundary_selection_value_6dp=5.412327
+D3_reduction_pct_mean=15.831470471546208
+mean_paired_score_difference=-0.0029678246524821
+original_sr90_count=19
+sg_sr90_count=19
+development_selection_frozen=YES
+confirmatory_data_accessed=NO
+post_unblind_retuning_permitted=NO

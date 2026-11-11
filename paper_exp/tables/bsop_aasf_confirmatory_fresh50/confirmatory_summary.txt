@@ -1,0 +1,88 @@
+===== FRESH-50 CONFIRMATORY SUMMARY =====
+Seeds: 4300100-4300149
+All smoothness metrics use strict actual executed actions.
+
+===== FOUR-METHOD ABSOLUTE SUMMARY =====
+method        score    SR@0.90  success   steps      D1      D2      D3   boundaryD1
+original      0.9317       46/50      27/50   239.9   9.347   5.380   7.722      12.233
+aasf          0.9244       46/50      31/50   240.1   8.512   4.506   6.655      12.656
+bsop          0.9335       46/50      28/50   238.9   9.423   4.961   6.613       9.775
+bsop_aasf     0.9167       45/50      26/50   245.5   8.324   4.033   5.523      10.712
+
+===== PAIRED CONTRASTS =====
+Positive smoothness reduction means the new method is smoother.
+
+--- original -> aasf (component) ---
+SR@0.90: 46/50 -> 46/50
+Exact success: 27/50 -> 31/50
+Score difference: mean=-0.0074, 95% bootstrap CI=[-0.0353, +0.0183], median=+0.0000, positive/negative=16/14, exact sign p=0.855536
+Executed-step difference: mean=+0.2000, 95% bootstrap CI=[-19.7405, +21.4600], median=+0.0000, positive/negative=19/20, exact sign p=1
+Common-prefix D1 reduction: mean=+7.1801%, 95% bootstrap CI=[+2.3259, +11.6849]%, median=+10.3642%, positive/negative=40/10, exact sign p=2.38613e-05
+Common-prefix D2 reduction: mean=+15.2786%, 95% bootstrap CI=[+11.0241, +19.3281]%, median=+17.6808%, positive/negative=44/6, exact sign p=3.24374e-08
+Common-prefix D3 reduction: mean=+13.1759%, 95% bootstrap CI=[+8.4094, +17.6665]%, median=+14.7443%, positive/negative=38/12, exact sign p=0.000305864
+Full cumulative D1 reduction: mean=+0.1520%, 95% bootstrap CI=[-14.3781, +11.8106]%, median=+6.6903%, positive/negative=29/21, exact sign p=0.322236
+Full cumulative D2 reduction: mean=+4.9981%, 95% bootstrap CI=[-11.8457, +18.5802]%, median=+18.2754%, positive/negative=37/13, exact sign p=0.000936223
+Full cumulative D3 reduction: mean=+1.6506%, 95% bootstrap CI=[-15.4598, +15.9617]%, median=+16.2673%, positive/negative=34/16, exact sign p=0.0153467
+Own-trajectory boundary D1 reduction: mean=-5.7892%, 95% bootstrap CI=[-12.1327, +0.5044]%, median=-5.7551%, positive/negative=19/31, exact sign p=0.11892
+
+--- original -> bsop (component) ---
+SR@0.90: 46/50 -> 46/50
+Exact success: 27/50 -> 28/50
+Score difference: mean=+0.0017, 95% bootstrap CI=[-0.0033, +0.0065], median=+0.0000, positive/negative=14/12, exact sign p=0.845019
+Executed-step difference: mean=-1.0000, 95% bootstrap CI=[-14.8600, +12.5800], median=+0.0000, positive/negative=10/12, exact sign p=0.831812
+Common-prefix D1 reduction: mean=-1.2756%, 95% bootstrap CI=[-3.6049, +0.7533]%, median=+0.7484%, positive/negative=35/15, exact sign p=0.00660045
+Common-prefix D2 reduction: mean=+7.5373%, 95% bootstrap CI=[+5.4565, +9.3670]%, median=+9.0319%, positive/negative=45/5, exact sign p=4.20985e-09
+Common-prefix D3 reduction: mean=+14.1588%, 95% bootstrap CI=[+12.2348, +16.0581]%, median=+14.7933%, positive/negative=49/1, exact sign p=9.05942e-14
+Full cumulative D1 reduction: mean=-3.6928%, 95% bootstrap CI=[-12.0030, +4.1345]%, median=+0.7046%, positive/negative=32/18, exact sign p=0.0649086
+Full cumulative D2 reduction: mean=+3.4763%, 95% bootstrap CI=[-6.6420, +12.2736]%, median=+7.1946%, positive/negative=39/11, exact sign p=9.02149e-05
+Full cumulative D3 reduction: mean=+10.0230%, 95% bootstrap CI=[-0.0210, +18.7708]%, median=+13.7290%, positive/negative=43/7, exact sign p=2.09868e-07
+Own-trajectory boundary D1 reduction: mean=+20.1414%, 95% bootstrap CI=[+17.0526, +23.2910]%, median=+20.0700%, positive/negative=48/2, exact sign p=2.26663e-12
+
+--- aasf -> bsop_aasf (primary) ---
+SR@0.90: 46/50 -> 45/50
+Exact success: 31/50 -> 26/50
+Score difference: mean=-0.0077, 95% bootstrap CI=[-0.0222, +0.0025], median=+0.0000, positive/negative=10/14, exact sign p=0.541256
+Executed-step difference: mean=+5.3800, 95% bootstrap CI=[-6.0000, +16.2400], median=+0.0000, positive/negative=17/12, exact sign p=0.458258
+Common-prefix D1 reduction: mean=+0.1133%, 95% bootstrap CI=[-1.6153, +1.7729]%, median=+1.4260%, positive/negative=34/16, exact sign p=0.0153467
+Common-prefix D2 reduction: mean=+8.2545%, 95% bootstrap CI=[+6.1107, +10.3448]%, median=+9.2358%, positive/negative=41/9, exact sign p=5.6141e-06
+Common-prefix D3 reduction: mean=+14.7799%, 95% bootstrap CI=[+12.2864, +17.2296]%, median=+14.9197%, positive/negative=46/4, exact sign p=4.46178e-10
+Full cumulative D1 reduction: mean=-1.4893%, 95% bootstrap CI=[-6.9037, +3.9822]%, median=+1.0365%, positive/negative=28/22, exact sign p=0.479888
+Full cumulative D2 reduction: mean=+6.6537%, 95% bootstrap CI=[+0.8160, +12.3701]%, median=+7.3567%, positive/negative=36/14, exact sign p=0.00260217
+Full cumulative D3 reduction: mean=+13.4849%, 95% bootstrap CI=[+7.8764, +19.0132]%, median=+14.6204%, positive/negative=41/9, exact sign p=5.6141e-06
+Own-trajectory boundary D1 reduction: mean=+15.0884%, 95% bootstrap CI=[+11.8112, +18.2450]%, median=+15.1527%, positive/negative=46/4, exact sign p=4.46178e-10
+
+--- original -> bsop_aasf (primary) ---
+SR@0.90: 46/50 -> 45/50
+Exact success: 27/50 -> 26/50
+Score difference: mean=-0.0150, 95% bootstrap CI=[-0.0504, +0.0111], median=+0.0000, positive/negative=14/14, exact sign p=1
+Executed-step difference: mean=+5.5800, 95% bootstrap CI=[-12.5000, +24.1600], median=+0.0000, positive/negative=20/13, exact sign p=0.296206
+Common-prefix D1 reduction: mean=+7.3937%, 95% bootstrap CI=[+2.5528, +11.8900]%, median=+11.0386%, positive/negative=39/11, exact sign p=9.02149e-05
+Common-prefix D2 reduction: mean=+22.9816%, 95% bootstrap CI=[+19.2539, +26.5201]%, median=+24.0659%, positive/negative=45/5, exact sign p=4.20985e-09
+Common-prefix D3 reduction: mean=+26.8877%, 95% bootstrap CI=[+23.1050, +30.6151]%, median=+27.3846%, positive/negative=49/1, exact sign p=9.05942e-14
+Full cumulative D1 reduction: mean=+0.7351%, 95% bootstrap CI=[-12.0771, +11.5882]%, median=+8.2477%, positive/negative=29/21, exact sign p=0.322236
+Full cumulative D2 reduction: mean=+13.2568%, 95% bootstrap CI=[-2.0505, +25.5991]%, median=+23.4729%, positive/negative=37/13, exact sign p=0.000936223
+Full cumulative D3 reduction: mean=+16.4577%, 95% bootstrap CI=[+0.8939, +29.2283]%, median=+26.1472%, positive/negative=40/10, exact sign p=2.38613e-05
+Own-trajectory boundary D1 reduction: mean=+10.6493%, 95% bootstrap CI=[+4.7806, +16.3669]%, median=+11.4950%, positive/negative=35/15, exact sign p=0.00660045
+
+--- bsop -> bsop_aasf (component) ---
+SR@0.90: 46/50 -> 45/50
+Exact success: 28/50 -> 26/50
+Score difference: mean=-0.0167, 95% bootstrap CI=[-0.0501, +0.0081], median=+0.0000, positive/negative=13/17, exact sign p=0.584665
+Executed-step difference: mean=+6.5800, 95% bootstrap CI=[-11.2005, +24.0600], median=+0.0000, positive/negative=23/14, exact sign p=0.187742
+Common-prefix D1 reduction: mean=+8.3168%, 95% bootstrap CI=[+4.0898, +12.2683]%, median=+12.2455%, positive/negative=40/10, exact sign p=2.38613e-05
+Common-prefix D2 reduction: mean=+16.3012%, 95% bootstrap CI=[+12.6621, +19.7734]%, median=+19.6369%, positive/negative=44/6, exact sign p=3.24374e-08
+Common-prefix D3 reduction: mean=+14.2645%, 95% bootstrap CI=[+10.1416, +18.1445]%, median=+16.1900%, positive/negative=42/8, exact sign p=1.16356e-06
+Full cumulative D1 reduction: mean=+1.1324%, 95% bootstrap CI=[-10.6266, +11.4144]%, median=+7.8131%, positive/negative=32/18, exact sign p=0.0649086
+Full cumulative D2 reduction: mean=+7.8072%, 95% bootstrap CI=[-3.7985, +18.1241]%, median=+15.4172%, positive/negative=35/15, exact sign p=0.00660045
+Full cumulative D3 reduction: mean=+5.1673%, 95% bootstrap CI=[-7.4793, +16.3281]%, median=+13.6544%, positive/negative=34/16, exact sign p=0.0153467
+Own-trajectory boundary D1 reduction: mean=-12.5450%, 95% bootstrap CI=[-19.5451, -5.8583]%, median=-7.4699%, positive/negative=17/33, exact sign p=0.0328391
+
+===== BSOP+AASF SAME-BOUNDARY MECHANISM =====
+Transitions: 1504
+Active transitions: 69.08%
+Correction mean/P95/max: 2.305971 / 5.000006 / 5.000020
+Relative correction median/P95/max: 0.224675 / 0.500001 / 0.500012
+Raw/projected boundary mean: 12.671189 / 10.828972
+Pooled same-boundary reduction: 14.5386%
+Per-seed same-boundary reduction: mean=14.5563%, 95% bootstrap CI=[12.9596, 16.3118]%, improved=50/50
+Violations (boundary/absolute/relative): 0/0/0

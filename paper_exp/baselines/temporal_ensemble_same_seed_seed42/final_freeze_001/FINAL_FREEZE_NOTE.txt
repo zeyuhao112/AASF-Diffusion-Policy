@@ -1,0 +1,36 @@
+===== TE SAME-SEED AUXILIARY PAIRED REFERENCE FINAL FREEZE =====
+
+purpose =
+compare frozen TE beta=2.0 against existing Original, SG, and
+BSOP+AASF on the same Push-T LD seed42 formal seed set
+4300100-4300149.
+
+status =
+completed auxiliary same-seed paired reference
+
+new_rollout =
+TE beta=2.0 only
+
+not_rerun =
+Original
+SG
+BSOP+AASF
+
+TE_selection =
+selected_beta = 2.0
+selected_method = te_beta_2p0
+source = prior frozen TE development selection
+
+attempt_001 =
+pre-rollout output-dir abort; no trace data
+
+retry_001 =
+rollout completed; post-run validator schema mismatch recovered
+offline using robust trace accounting
+
+normal_trace_count = 50
+diagnostic_trace_count = 50
+
+parameter_selection = NO
+post_unblind_retuning = NO
+new_hyperparameter_search = NO

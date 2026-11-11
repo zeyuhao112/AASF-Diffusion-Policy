@@ -1,0 +1,23 @@
+{
+  "bootstrap_reps": 20000,
+  "bootstrap_seed": 20260819,
+  "bsop_aasf_root": "paper_artifacts/traces/bsop_aasf_confirmatory_fresh50/bsop_aasf",
+  "methods": [
+    "Original",
+    "SG_w5p3",
+    "BSOP_AASF",
+    "TE_beta2"
+  ],
+  "new_rollout": "TE_beta2 only",
+  "no_parameter_selection": true,
+  "original_root": "paper_artifacts/traces/bsop_aasf_confirmatory_fresh50/original",
+  "post_unblind_retuning": false,
+  "seed_count": 50,
+  "seed_end": 4300149,
+  "seed_start": 4300100,
+  "sg_original_aux_max_abs_action_diff_max": 0.0,
+  "sg_original_aux_max_abs_action_diff_mean": 0.0,
+  "sg_root": "paper_exp/savgol_baseline_seed42/formal_confirmatory/traces/w5_p3",
+  "te_eval_log": "paper_exp/temporal_ensemble_same_seed_seed42_4300100/formal_beta2_4300100_4300149_retry_001/results/te_beta_2p0/eval_log.json",
+  "te_root": "paper_exp/temporal_ensemble_same_seed_seed42_4300100/formal_beta2_4300100_4300149_retry_001/traces/te_beta_2p0"
+}

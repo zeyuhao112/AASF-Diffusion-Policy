@@ -1,0 +1,63 @@
+{
+  "protocol_version": "franka_replay_v1",
+  "freeze_stage": "before_any_cross_method_dynamics_comparison",
+
+  "robot_model": "MuJoCo Menagerie Franka Emika Panda",
+  "end_effector_body": "hand",
+
+  "pusht_action_space": [0.0, 512.0],
+  "workspace_mapping": {
+    "type": "global_affine",
+    "width_m": 0.20,
+    "center": "official Panda home hand position",
+    "z": "fixed at official home hand height"
+  },
+
+  "ik": {
+    "type": "fixed-orientation 6D damped-least-squares",
+    "orientation": "official home hand orientation",
+    "position_tolerance_m": 0.0001,
+    "orientation_tolerance_rad": 0.0002,
+    "sequential_warm_start": true
+  },
+
+  "timing": {
+    "policy_command_dt_s": 0.1,
+    "physics_dt_s": 0.002,
+    "physics_frequency_hz": 500,
+    "steps_per_command": 50,
+    "settle_time_s": 1.0
+  },
+
+  "actuation": {
+    "panda_position_actuator_parameters": "official model unchanged",
+    "force_limits": "official model unchanged",
+    "reference_prefilter": "first_order",
+    "reference_prefilter_tau_s": 0.010,
+    "selection_rule": "smallest Original-only candidate satisfying <=5% any-joint saturation, <=5% single-joint saturation, and <=1.5x ZOH tracking RMSE"
+  },
+
+  "formal_input": "strict executed_action",
+  "formal_comparison": "within-seed four-method common prefix",
+
+  "methods": [
+    "original",
+    "aasf",
+    "bsop",
+    "bsop_aasf"
+  ],
+
+  "primary_dynamics_metrics": [
+    "torque_rate_rms",
+    "torque_rate_p95",
+    "ee_jerk_rms",
+    "tracking_rmse"
+  ],
+
+  "health_metrics": [
+    "any_joint_saturation_rate",
+    "per_joint_saturation_rate"
+  ],
+
+  "claim_scope": "simulated manipulator dynamics replay; not real-hardware vibration validation"
+}

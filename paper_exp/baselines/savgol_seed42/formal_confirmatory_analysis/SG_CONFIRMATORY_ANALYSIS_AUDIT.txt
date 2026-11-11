@@ -1,0 +1,32 @@
+===== SG FORMAL CONFIRMATORY ANALYSIS AUDIT =====
+
+study=savgol_formal_confirmatory_seed42
+formal_confirmatory_unblinded=YES
+formal_selected_method=w5_p3
+selected_window=5
+selected_polyorder=3
+alternative_sg_configurations_evaluated=NO
+candidate_selection_performed=NO
+post_unblind_retuning_performed=NO
+
+formal_seed_start=4300100
+formal_seed_end=4300149
+formal_seed_count=50
+paired_row_count=50
+bootstrap_samples=100000
+control_dt=0.1
+
+common_prefix_steps_min=73
+common_prefix_steps_max=300
+
+max_C1_vs_D1_summary_error=2.4424906541753444e-15
+max_C2_vs_D2_summary_error=0
+max_C3_vs_D3_summary_error=3.5527136788005009e-15
+
+analyzer_sha256=61ac6001d599e6c38a6ae76f3f36ba81ab0535db8d40c5ae75914954c795d876
+protocol_sha256=b0ba2312b017c4f62ad4216d6a8a98989eeb1eaba8521dcd4531317aaadb7b10
+selected_config_sha256=5308642320c55895246e934d6dab3b2632662004b8b0a67ac9bb1849ec70429b
+formal_artifact_manifest_sha256=97e01bc2b97363e6967b630e0737e2eef790a39f09afc99c342fc04e6887cbc6
+confirmatory_launcher_sha256=9d874ca22a11120d4213a4c1c49e1b41948348f2661e4ae2b51c440d5637f672
+
+SG_FORMAL_CONFIRMATORY_ANALYSIS_AUDIT = PASS

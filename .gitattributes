@@ -1,0 +1,16 @@
+# Reproducibility artifacts are verified byte for byte by SHA-256 manifests.
+# Preserve repository blob line endings on every platform.
+* -text
+
+# Frozen CSV exports retain their original CRLF bytes.
+*.csv -whitespace
+
+# These frozen server records contain source-generated padding or a final
+# blank line. Keep their bytes unchanged so their provenance hashes remain
+# valid while retaining strict whitespace checks for normal source files.
+paper_exp/metadata/blockpush_bsop_aasf_confirmatory_fresh50/master_run_metadata.txt -whitespace
+paper_exp/metadata/bsop_aasf_confirmatory_fresh50/master_run_metadata.txt -whitespace
+paper_exp/metadata/bsop_aasf_multicheckpoint_seed43_fresh50/master_run_metadata.txt -whitespace
+paper_exp/metadata/bsop_aasf_multicheckpoint_seed44_fresh50/master_run_metadata.txt -whitespace
+paper_exp/scripts/run_blockpush_confirmatory_fresh50.sh -whitespace
+paper_exp/tables/bsop_aasf_confirmatory_fresh50/confirmatory_binary_outcomes.txt -whitespace

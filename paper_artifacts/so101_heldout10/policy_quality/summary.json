@@ -1,0 +1,55 @@
+{
+  "protocol": "Frozen 20k train40 Diffusion Policy predictions versus same-time recorded heldout10 actions; no policy resampling.",
+  "space": "checkpoint-normalized action space",
+  "prediction_definition": "full_norm[query, action_offset_0]",
+  "target_definition": "checkpoint preprocessor applied to recorded heldout action at action_offset_0",
+  "episodes": 10,
+  "queries": 273,
+  "action_dim": 6,
+  "pooled": {
+    "n_queries": 273,
+    "coordinate_rmse": 0.10789745096525961,
+    "coordinate_mae": 0.056171079711779336,
+    "l2_mean": 0.1917982253024827,
+    "l2_median": 0.13761660206100895,
+    "l2_p95": 0.5221403908976999,
+    "l2_max": 1.2161215563742331
+  },
+  "per_dimension": [
+    {
+      "dimension": 0,
+      "rmse": 0.037519875493105474,
+      "mae": 0.029192193092321194
+    },
+    {
+      "dimension": 1,
+      "rmse": 0.08270577045488711,
+      "mae": 0.05377857683178706
+    },
+    {
+      "dimension": 2,
+      "rmse": 0.08969266538478066,
+      "mae": 0.06053528939834335
+    },
+    {
+      "dimension": 3,
+      "rmse": 0.1026695783798574,
+      "mae": 0.06998581159177608
+    },
+    {
+      "dimension": 4,
+      "rmse": 0.05460819139093693,
+      "mae": 0.03973581955082469
+    },
+    {
+      "dimension": 5,
+      "rmse": 0.20008823780956217,
+      "mae": 0.08379878780562362
+    }
+  ],
+  "alignment_audit": {
+    "max_prev_norm_abs_mismatch": 0.0,
+    "max_prev_native_abs_mismatch": 0.0,
+    "status": "PASS"
+  }
+}

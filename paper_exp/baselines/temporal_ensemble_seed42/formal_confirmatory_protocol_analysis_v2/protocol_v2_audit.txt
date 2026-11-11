@@ -1,0 +1,24 @@
+TEMPORAL ENSEMBLE FORMAL PROTOCOL V2 AUDIT
+====================================
+
+analysis_scope=supplemental_offline_only
+formal_rollout_repeated=NO
+methods=original,te_beta_2p0
+frozen_beta=2.0
+seeds=4800100-4800149
+paired_common_prefix=YES
+Boundary_D1_recomputed=NO
+control_dt_s=0.1
+D1_D2_D3_dt=1
+C1_C2_C3_time_normalized=YES
+D_C_reduction_invariance=PASS
+bootstrap_samples=100000
+bootstrap_base_seed=20260816
+alternative_beta_evaluation=NO
+post_unblind_retuning=NO
+confirmatory_manifest_verification=PASS
+prior_analysis_manifest_verification=PASS
+canonical_reference_sha256=61ac6001d599e6c38a6ae76f3f36ba81ab0535db8d40c5ae75914954c795d876
+analyzer_sha256=e913ef8d5fd75ca873c4befc6e672265e911330ee1b10e7cd1c0c6e1a99638ec
+
+TE_PROTOCOL_V2_ANALYSIS_AUDIT = PASS

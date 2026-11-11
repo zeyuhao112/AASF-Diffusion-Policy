@@ -1,0 +1,22 @@
+Control-period normalization did not alter any paired percentage
+reduction because the same fixed 0.1-s sampling interval scales both
+members of each paired comparison. The maximum numerical difference
+between the original D1-D3 percentage reductions and the corresponding
+time-normalized C1-C3 reductions was
+2.842e-14 percentage points.
+
+Across the seven confirmatory conditions, the mean time-normalized C2
+reduction was positive in all seven conditions and the mean
+time-normalized C3 reduction was positive in all seven conditions,
+matching the direction of the original finite-difference analysis.
+Own-trajectory boundary D1 reduction likewise remained positive in all
+seven conditions. These results show that the reported smoothness
+effect is not an artifact of omitting the known 0.1-s control period.
+
+For multiplicity sensitivity, Holm correction was applied across the 21
+primary smoothness tests using both exact sign tests and paired
+Wilcoxon signed-rank tests. At alpha=0.05,
+21/21 tests survived Holm correction under the exact sign
+analysis and 21/21 survived under the Wilcoxon analysis.
+The full adjusted p-values are reported in
+bsop_holm_multiplicity_7cond.csv.

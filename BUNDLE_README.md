@@ -1,16 +1,13 @@
-# AASF CRN Final Core Bundle
-
-This directory contains the frozen, manuscript-ready core results for
-the Adaptive Action Smoothing Filter (AASF) evaluation built on
-Diffusion Policy.
+# AASF–BSOP v1.1.0 repository bundle
 
 Start with:
 
-1. `RESULTS_SUMMARY.md`
-2. `MANUSCRIPT_TABLES.tex`
-3. `REPRODUCIBILITY.md`
-4. `PROVENANCE.txt`
+1. `README.md`
+2. `RESULTS_SUMMARY.md`
+3. `docs/AASF_BSOP_REPRODUCIBILITY.md`
+4. `AASF_BSOP_RELEASE_NOTES_v1.1.0.md`
+5. `PROVENANCE.txt`
 
-The full 200-episode NPZ trace set is not included in this lightweight
-archive. Its SHA-256 manifest is included so the raw-data archive can be
-verified independently.
+This is a compact source-and-evidence bundle. Model weights and bulk raw traces
+are intentionally excluded and should be distributed as separate release/data
+assets.

@@ -1,0 +1,3 @@
+c0001423c9a09fd4baf3f639654cc1320c6d152828e516f2b9f7c75c83ce6df4  /root/autodl-tmp/outputs/so101_diffusion_train40_seed1000/checkpoints/020000/pretrained_model/model.safetensors
+f88b0539406cd500249c76f0f70aa9508068ca8e57bdcff22577b0b070ceac96  /root/autodl-tmp/outputs/so101_diffusion_train40_seed1000/checkpoints/020000/pretrained_model/config.json
+35c48a16819805dabd9587962ded26a7fb28e11114ab6a0c5f838837f93a462f  /root/autodl-tmp/so101_split_40_10_v1/split_manifest.json

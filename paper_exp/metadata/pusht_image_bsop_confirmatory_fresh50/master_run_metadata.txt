@@ -1,0 +1,19 @@
+status=started
+run_name=pusht_image_bsop_confirmatory_fresh50
+start_seed=4500200
+end_seed=4500249
+n_test=50
+runner_sha256=0bcf6c5c3158f3fc0697a4c75c008a656555053be0d9e961fd5c9bb565547f20
+checkpoint_sha256=bac7221f7e34cd51162dc1972e1a39ffcddc87de1dc1780c44ffa61b88c4ff76
+paired_policy_seed=1
+policy_seed_salt=20260710
+
+BSOP frozen Push-T parameters:
+DP_BSOP_ETA=1.0
+DP_BSOP_LAMBDA_MAX=0.5
+DP_BSOP_RHO=5.0
+DP_BSOP_KAPPA=0.5
+
+This is a modality-transfer confirmatory evaluation.
+No Image-specific BSOP retuning is permitted.
+status=completed

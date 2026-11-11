@@ -1,0 +1,42 @@
+===== PUSHT IMAGE BSOP CONFIRMATORY FRESH-50 SUMMARY =====
+
+===== ABSOLUTE SUMMARY =====
+method             score     SR@0.90     exact       steps            D1            D2            D3      boundaryD1
+original        0.783091    31/50    19/50      257.58      9.359243      4.784416      6.624268       10.907293
+bsop            0.807030    35/50    19/50      259.70      9.273790      4.503970      5.852565        9.064618
+
+===== PAIRED CONTINUOUS CONTRASTS: ORIGINAL -> BSOP =====
+score_difference: mean=+0.023939, 95% CI=[-0.025365, +0.077412], median=+0.000000, positive/negative/zero=19/18/13, sign_p=1
+executed_step_difference: mean=+2.120000, 95% CI=[-16.880000, +21.160000], median=+0.000000, positive/negative/zero=14/13/23, sign_p=1
+common_prefix_D1_reduction_pct: mean=+2.127294, 95% CI=[-0.928841, +5.087913], median=+1.568861, positive/negative/zero=30/20/0, sign_p=0.202639
+common_prefix_D2_reduction_pct: mean=+6.937074, 95% CI=[+3.496323, +10.378959], median=+6.051487, positive/negative/zero=35/15/0, sign_p=0.00660045
+common_prefix_D3_reduction_pct: mean=+12.013036, 95% CI=[+8.355238, +15.622237], median=+12.840434, positive/negative/zero=39/11/0, sign_p=9.02149e-05
+own_trajectory_boundary_D1_reduction_pct: mean=+15.739123, 95% CI=[+12.044919, +19.478947], median=+13.931957, positive/negative/zero=47/3/0, sign_p=3.70832e-11
+same_boundary_D1_reduction_pct: mean=+16.832515, 95% CI=[+15.829323, +17.894159], median=+16.587263, positive/negative/zero=50/0/0, sign_p=1.77636e-15
+
+===== PAIRED BINARY OUTCOMES =====
+SR@0.90: 31/50 -> 35/50
+  gain/loss/same-success/same-failure = 6/2/29/13
+  paired rate difference = +8.00 pp, 95% bootstrap CI = [-2.00, +20.00] pp
+  exact McNemar/binomial p = 0.289062
+exact_success: 19/50 -> 19/50
+  gain/loss/same-success/same-failure = 8/8/11/23
+  paired rate difference = +0.00 pp, 95% bootstrap CI = [-16.00, +16.00] pp
+  exact McNemar/binomial p = 1
+
+===== BSOP SAME-BOUNDARY MECHANISM =====
+Executed boundaries: 1596
+Active transitions: 79.26%
+Correction mean/P95/max: 2.400576625 / 5.000004910 / 5.000019105
+Relative correction median/P95/max: 0.241044 / 0.500001 / 0.500012
+Lambda mean/P95/max: 0.289108 / 0.500000 / 0.500000
+Raw/projected boundary mean: 10.880009340 / 9.005779250
+Pooled same-boundary reduction: 17.2264%
+Per-seed same-boundary reduction: mean=16.8325%, 95% CI=[15.8254, 17.8975]%, improved=50/50
+Violations (boundary/rho/kappa/lambda-star/lambda-max): 0/0/0/0/0
+
+===== AUDIT =====
+FORMAL_TRACE_AUDIT = PASS
+CRN_INITIAL_QUERY_AUDIT = PASS
+ACTUAL_EXECUTION_ACCOUNTING = PASS
+BSOP_GEOMETRIC_CONSTRAINTS = PASS

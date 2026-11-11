@@ -1,0 +1,82 @@
+===== BLOCKPUSH CONFIRMATORY FRESH-50 SUMMARY =====
+
+===== FOUR-METHOD ABSOLUTE SUMMARY =====
+method          score       p1       p2    steps         D1         D2         D3   boundaryD1
+original       0.2580    18/50     8/50    326.5   0.015469   0.011155   0.019171     0.019208
+aasf           0.2074    17/50     4/50    336.4   0.013562   0.009277   0.015519     0.018939
+bsop           0.2576    19/50     7/50    328.1   0.015230   0.010477   0.017161     0.015732
+bsop_aasf      0.1780    14/50     4/50    338.6   0.013337   0.009004   0.014492     0.015406
+
+===== PAIRED CONTRASTS =====
+
+--- original -> aasf ---
+P1: 18/50 -> 17/50
+P2: 8/50 -> 4/50
+score_difference: mean=-0.0506, 95% CI=[-0.1898, +0.0886], median=+0.0000, positive/negative=11/13, sign_p=0.83882
+executed_step_difference: mean=+9.9200, 95% CI=[-12.2200, +32.7605], median=+0.0000, positive/negative=8/4, sign_p=0.387695
+common_prefix_d1_reduction_pct: mean=+9.7742%, 95% CI=[+3.6372, +15.3716]%, median=+12.4189%, positive/negative=38/12, sign_p=0.000305864
+common_prefix_d2_reduction_pct: mean=+12.0453%, 95% CI=[+4.4486, +19.0350]%, median=+16.8285%, positive/negative=40/10, sign_p=2.38613e-05
+common_prefix_d3_reduction_pct: mean=+14.5083%, 95% CI=[+6.8901, +21.6304]%, median=+20.8801%, positive/negative=41/9, sign_p=5.6141e-06
+full_cumulative_d1_reduction_pct: mean=+2.7669%, 95% CI=[-8.5762, +12.6593]%, median=+12.5942%, positive/negative=34/16, sign_p=0.0153467
+full_cumulative_d2_reduction_pct: mean=-7.2155%, 95% CI=[-31.9179, +13.8196]%, median=+15.9331%, positive/negative=38/12, sign_p=0.000305864
+full_cumulative_d3_reduction_pct: mean=-4.0758%, 95% CI=[-28.2186, +16.1675]%, median=+19.1874%, positive/negative=39/11, sign_p=9.02149e-05
+own_trajectory_boundary_d1_reduction_pct: mean=-1.7356%, 95% CI=[-9.0126, +5.3358]%, median=+2.2839%, positive/negative=27/23, sign_p=0.671811
+
+--- original -> bsop ---
+P1: 18/50 -> 19/50
+P2: 8/50 -> 7/50
+score_difference: mean=-0.0004, 95% CI=[-0.0820, +0.0804], median=+0.0000, positive/negative=8/7, sign_p=1
+executed_step_difference: mean=+1.6000, 95% CI=[-16.5600, +19.9800], median=+0.0000, positive/negative=7/5, sign_p=0.774414
+common_prefix_d1_reduction_pct: mean=+1.3607%, 95% CI=[-2.7843, +5.1578]%, median=+1.9236%, positive/negative=32/18, sign_p=0.0649086
+common_prefix_d2_reduction_pct: mean=+4.0013%, 95% CI=[-0.6068, +8.4513]%, median=+4.9314%, positive/negative=35/15, sign_p=0.00660045
+common_prefix_d3_reduction_pct: mean=+8.0041%, 95% CI=[+3.2734, +12.7897]%, median=+7.1945%, positive/negative=40/10, sign_p=2.38613e-05
+full_cumulative_d1_reduction_pct: mean=-3.4253%, 95% CI=[-14.1673, +5.4052]%, median=+2.2616%, positive/negative=32/18, sign_p=0.0649086
+full_cumulative_d2_reduction_pct: mean=-2.9264%, 95% CI=[-17.5635, +8.9422]%, median=+4.9314%, positive/negative=33/17, sign_p=0.0328391
+full_cumulative_d3_reduction_pct: mean=+1.5329%, 95% CI=[-12.7450, +12.9841]%, median=+8.1351%, positive/negative=36/14, sign_p=0.00260217
+own_trajectory_boundary_d1_reduction_pct: mean=+16.8594%, 95% CI=[+11.8777, +21.4879]%, median=+18.7165%, positive/negative=43/7, sign_p=2.09868e-07
+
+--- aasf -> bsop_aasf ---
+P1: 17/50 -> 14/50
+P2: 4/50 -> 4/50
+score_difference: mean=-0.0294, 95% CI=[-0.1188, +0.0510], median=+0.0000, positive/negative=4/6, sign_p=0.753906
+executed_step_difference: mean=+2.2200, 95% CI=[-13.1000, +18.9200], median=+0.0000, positive/negative=3/4, sign_p=1
+common_prefix_d1_reduction_pct: mean=+0.9304%, 95% CI=[-4.9167, +5.7067]%, median=+3.3240%, positive/negative=37/13, sign_p=0.000936223
+common_prefix_d2_reduction_pct: mean=-0.4121%, 95% CI=[-8.3625, +6.6748]%, median=+7.2224%, positive/negative=38/12, sign_p=0.000305864
+common_prefix_d3_reduction_pct: mean=+2.5009%, 95% CI=[-6.2495, +10.1482]%, median=+10.6936%, positive/negative=39/11, sign_p=9.02149e-05
+full_cumulative_d1_reduction_pct: mean=-3.2152%, 95% CI=[-12.2557, +4.6163]%, median=+3.2029%, positive/negative=35/15, sign_p=0.00660045
+full_cumulative_d2_reduction_pct: mean=-11.7840%, 95% CI=[-35.4978, +6.2353]%, median=+8.0761%, positive/negative=37/13, sign_p=0.000936223
+full_cumulative_d3_reduction_pct: mean=-8.4393%, 95% CI=[-31.5352, +9.4862]%, median=+10.7699%, positive/negative=38/12, sign_p=0.000305864
+own_trajectory_boundary_d1_reduction_pct: mean=+16.7178%, 95% CI=[+10.4373, +22.4655]%, median=+20.5807%, positive/negative=41/9, sign_p=5.6141e-06
+
+--- original -> bsop_aasf ---
+P1: 18/50 -> 14/50
+P2: 8/50 -> 4/50
+score_difference: mean=-0.0800, 95% CI=[-0.2188, +0.0502], median=+0.0000, positive/negative=7/14, sign_p=0.189247
+executed_step_difference: mean=+12.1400, 95% CI=[-8.4605, +33.4200], median=+0.0000, positive/negative=8/4, sign_p=0.387695
+common_prefix_d1_reduction_pct: mean=+10.8337%, 95% CI=[+4.4524, +16.4525]%, median=+13.7620%, positive/negative=41/9, sign_p=5.6141e-06
+common_prefix_d2_reduction_pct: mean=+14.9534%, 95% CI=[+6.8148, +22.3673]%, median=+23.8683%, positive/negative=39/11, sign_p=9.02149e-05
+common_prefix_d3_reduction_pct: mean=+20.1301%, 95% CI=[+12.1232, +27.4682]%, median=+27.9137%, positive/negative=41/9, sign_p=5.6141e-06
+full_cumulative_d1_reduction_pct: mean=+3.0755%, 95% CI=[-8.7433, +13.3950]%, median=+13.0076%, positive/negative=37/13, sign_p=0.000936223
+full_cumulative_d2_reduction_pct: mean=-2.9097%, 95% CI=[-23.3352, +14.8394]%, median=+23.3799%, positive/negative=35/15, sign_p=0.00660045
+full_cumulative_d3_reduction_pct: mean=+3.6728%, 95% CI=[-14.6799, +20.0645]%, median=+27.0403%, positive/negative=36/14, sign_p=0.00260217
+own_trajectory_boundary_d1_reduction_pct: mean=+16.7591%, 95% CI=[+9.6225, +23.7190]%, median=+20.6477%, positive/negative=37/13, sign_p=0.000936223
+
+===== BSOP SAME-BOUNDARY MECHANISM =====
+Transitions: 2014
+Active transitions: 78.65%
+Correction mean/P95/max: 0.005259993 / 0.009907591 / 0.009907601
+Relative correction median/P95/max: 0.328729 / 0.500000 / 0.500023
+Raw/projected boundary mean: 0.019938604 / 0.015699284
+Pooled same-boundary reduction: 21.2619%
+Per-seed same-boundary reduction: mean=20.3953%, 95% CI=[18.2301, 22.5237]%, improved=50/50
+Violations (boundary/absolute/relative): 0/0/0
+
+===== BSOP_AASF SAME-BOUNDARY MECHANISM =====
+Transitions: 2080
+Active transitions: 63.80%
+Correction mean/P95/max: 0.004475740 / 0.009907589 / 0.009907601
+Relative correction median/P95/max: 0.310216 / 0.500000 / 0.500005
+Raw/projected boundary mean: 0.018963082 / 0.015359486
+Pooled same-boundary reduction: 19.0032%
+Per-seed same-boundary reduction: mean=18.8232%, 95% CI=[16.3333, 21.3248]%, improved=50/50
+Violations (boundary/absolute/relative): 0/0/0

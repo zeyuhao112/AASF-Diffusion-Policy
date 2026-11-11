@@ -1,0 +1,13 @@
+===== BSOP 7-CONDITION CANONICAL MASTER V4 =====
+
+Push-T lowdim D1-D3 use formal paired common-executed-prefix semantics.
+BlockPush and Push-T image rows are carried unchanged from v3.
+
+     task modality         checkpoint primary  primary_before  primary_after  secondary_before  secondary_after    dScore  dScore_ci_low  dScore_ci_high    D1_pct  D1_ci_low  D1_ci_high   D2_pct  D2_ci_low  D2_ci_high    D3_pct  D3_ci_low  D3_ci_high  Boundary_pct  Boundary_ci_low  Boundary_ci_high
+   Push-T   lowdim             seed42 SR@0.90              46             46                27               28  0.001740      -0.003302        0.006543 -1.275591  -3.634147    0.779049 7.537254   5.463450    9.374316 14.158802  12.183056   16.037916     20.141429        16.970657         23.237016
+   Push-T   lowdim             seed43 SR@0.90              41             41                26               28 -0.000719      -0.056652        0.054614 -0.466068  -5.113645    3.785527 5.793048   0.833586    9.886121 12.499793   7.487076   16.440898     15.898807        10.076483         20.888752
+   Push-T   lowdim             seed44 SR@0.90              38             37                16               18 -0.023264      -0.088751        0.033877  0.556719  -2.574216    3.805403 5.837820   0.442486   10.416947 11.746279   4.475509   17.312284     13.347558         5.010949         20.155385
+BlockPush   lowdim seed42 / epoch2250      P1              18             19                 8                7 -0.000400      -0.082000        0.080400  1.360700  -2.784300    5.157800 4.001300  -0.606800    8.451300  8.004100   3.273400   12.789700     16.859400        11.877700         21.487900
+   Push-T    image seed42 / epoch0500 SR@0.90              31             35                19               19  0.023939      -0.025365        0.077412  2.127294  -0.928841    5.087913 6.937074   3.496323   10.378959 12.013036   8.355238   15.622237     15.739123        12.044919         19.478947
+   Push-T    image seed43 / epoch1450 SR@0.90              34             33                23               25 -0.022441      -0.045561       -0.002882 -0.289290  -2.960679    2.131710 4.620270   1.613555    7.273604  9.918027   6.719892   12.862670     13.990875        10.505574         17.474718
+   Push-T    image seed44 / epoch1850 SR@0.90              31             33                23               23  0.012645      -0.028340        0.058281  1.015675  -1.598027    3.453107 6.371628   3.815620    8.878417 10.258626   7.349022   13.130394     12.696782         9.451814         15.933931

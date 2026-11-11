@@ -1,71 +1,62 @@
-% Final manuscript-ready tables for AASF.
-% Lower D1, D2, and D3 are better.
+% Compact repository copy of the principal AASF-BSOP result tables.
+% Requires \usepackage{booktabs}.
+% Positive reductions indicate smoother command sequences.
 
-\begin{table}[t]
+\begin{table*}[t]
 \centering
-\caption{Task performance across 100 common-random-number paired episodes.}
-\label{tab:task_performance}
-\begin{tabular}{lccc}
-\hline
-Metric & Original & AASF & Paired result \\
-\hline
-Score &
-$0.9320 \pm 0.2180$ &
-$0.9246 \pm 0.2180$ &
-$\Delta=-0.0074$,
-95\% CI $[-0.0367,0.0198]$ \\
-Success rate ($\geq0.90$) &
-$92\%$ &
-$89\%$ &
-$\Delta=-3$ pp,
-95\% CI $[-8,1]$ pp \\
-\hline
+\caption{Time-normalized seven-condition BSOP evaluation. Each condition uses
+50 paired formal evaluation seeds. C2 and C3 are command-space finite-difference
+proxies, not direct physical acceleration or jerk measurements.}
+\label{tab:bsop-seven-condition}
+\begin{tabular}{lrrrr}
+\toprule
+Condition & $\Delta$Score & Boundary $D_1$ red. & $C_2$ red. & $C_3$ red. \\
+\midrule
+Push-T lowdim seed42 & +0.0017 & +20.14\% & +7.54\% & +14.16\% \\
+Push-T lowdim seed43 & -0.0007 & +15.90\% & +5.79\% & +12.50\% \\
+Push-T lowdim seed44 & -0.0233 & +13.35\% & +5.84\% & +11.75\% \\
+BlockPush lowdim & -0.0004 & +16.86\% & +4.00\% & +8.00\% \\
+Push-T image seed42 & +0.0239 & +15.74\% & +6.94\% & +12.01\% \\
+Push-T image seed43 & -0.0224 & +13.99\% & +4.62\% & +9.92\% \\
+Push-T image seed44 & +0.0126 & +12.70\% & +6.37\% & +10.26\% \\
+\bottomrule
 \end{tabular}
-\end{table}
-
-
-\begin{table}[t]
-\centering
-\caption{Paired action-smoothness results across 100 episodes.}
-\label{tab:smoothness}
-\begin{tabular}{lcccc}
-\hline
-Metric & Original & AASF & Reduction & Holm-adjusted $p$ \\
-\hline
-D1 &
-$9.4420 \pm 1.9127$ &
-$8.3764 \pm 1.4948$ &
-$11.29\%$ &
-$9.11\times10^{-10}$ \\
-D2 &
-$5.3485 \pm 1.0684$ &
-$4.4604 \pm 0.8070$ &
-$16.60\%$ &
-$2.51\times10^{-12}$ \\
-D3 &
-$7.5454 \pm 1.7523$ &
-$6.5300 \pm 1.4761$ &
-$13.46\%$ &
-$2.49\times10^{-9}$ \\
-\hline
-\end{tabular}
-\end{table}
-
+\end{table*}
 
 \begin{table}[t]
 \centering
-\caption{AASF computational overhead.}
-\label{tab:overhead}
+\caption{SO-101 held-out teacher-forced offline BSOP audit. The primary
+reference is the recorded action immediately preceding each query.}
+\label{tab:so101-offline-audit}
 \begin{tabular}{lc}
-\hline
+\toprule
 Quantity & Result \\
-\hline
-Net post-processing overhead &
-$0.3719 \pm 0.0090$ ms \\
-Bootstrap 95\% CI &
-$[0.3702,0.3737]$ ms \\
-Relative to policy inference &
-$0.06295\%$ \\
-\hline
+\midrule
+Held-out episodes & 10 \\
+Adjacent query boundaries & 263 \\
+Raw mean discrepancy & 0.190532 \\
+Projected mean discrepancy & 0.163907 \\
+Pooled reduction & 13.9743\% \\
+Episode-cluster 95\% CI & [11.5049\%, 16.0982\%] \\
+Active boundaries & 167/263 \\
+Constraint violations & 0/0/0 \\
+Mean $\lambda$ (all / active) & 0.161 / 0.253 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Final isolated post-processing microbenchmark.}
+\label{tab:postprocessing-timing}
+\begin{tabular}{lr}
+\toprule
+Method & Mean time per query ($\mu$s) \\
+\midrule
+BSOP & 73.54 \\
+AASF & 180.63 \\
+BSOP+AASF & 272.70 \\
+TE $\beta=2$ full path & 97.66 \\
+\bottomrule
 \end{tabular}
 \end{table}

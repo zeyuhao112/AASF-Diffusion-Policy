@@ -1,0 +1,46 @@
+===== BLOCKPUSH PAIRED BINARY OUTCOMES =====
+
+--- original -> aasf ---
+P1: 18/50 -> 17/50
+  paired transitions gain/loss/same-success/same-failure = 10/11/7/22
+  paired rate difference = -2.00 pp, 95% bootstrap CI = [-20.00, +16.00] pp
+  exact McNemar/binomial p = 1
+P2: 8/50 -> 4/50
+  paired transitions gain/loss/same-success/same-failure = 4/8/0/38
+  paired rate difference = -8.00 pp, 95% bootstrap CI = [-22.00, +6.00] pp
+  exact McNemar/binomial p = 0.387695
+
+--- original -> bsop ---
+P1: 18/50 -> 19/50
+  paired transitions gain/loss/same-success/same-failure = 4/3/15/28
+  paired rate difference = +2.00 pp, 95% bootstrap CI = [-8.00, +12.00] pp
+  exact McNemar/binomial p = 1
+P2: 8/50 -> 7/50
+  paired transitions gain/loss/same-success/same-failure = 4/5/3/38
+  paired rate difference = -2.00 pp, 95% bootstrap CI = [-14.00, +10.00] pp
+  exact McNemar/binomial p = 1
+
+--- aasf -> bsop_aasf ---
+P1: 17/50 -> 14/50
+  paired transitions gain/loss/same-success/same-failure = 2/5/12/31
+  paired rate difference = -6.00 pp, 95% bootstrap CI = [-16.00, +4.00] pp
+  exact McNemar/binomial p = 0.453125
+P2: 4/50 -> 4/50
+  paired transitions gain/loss/same-success/same-failure = 3/3/1/43
+  paired rate difference = +0.00 pp, 95% bootstrap CI = [-10.00, +10.00] pp
+  exact McNemar/binomial p = 1
+
+--- original -> bsop_aasf ---
+P1: 18/50 -> 14/50
+  paired transitions gain/loss/same-success/same-failure = 7/11/7/25
+  paired rate difference = -8.00 pp, 95% bootstrap CI = [-24.00, +8.00] pp
+  exact McNemar/binomial p = 0.480682
+P2: 8/50 -> 4/50
+  paired transitions gain/loss/same-success/same-failure = 4/8/0/38
+  paired rate difference = -8.00 pp, 95% bootstrap CI = [-22.00, +6.00] pp
+  exact McNemar/binomial p = 0.387695
+
+===== OUTPUT HASHES =====
+48d2b98ba30bb8e8c11b85c9a70b0a6982e027b70a3fc9557d655c8e8e21b4d4 paper_exp/tables/blockpush_bsop_aasf_confirmatory_fresh50/blockpush_binary_outcomes_per_seed.csv
+aba488d0575b725edfc828b40c4421a85b69d05fb841ea120bceab4a571601e7 paper_exp/tables/blockpush_bsop_aasf_confirmatory_fresh50/blockpush_binary_outcomes.csv
+2b71170999a2f13d6d5e99a18c9fa987480433a1e81022f63f6c0ec9202d0873 paper_exp/tables/blockpush_bsop_aasf_confirmatory_fresh50/blockpush_binary_outcomes.txt

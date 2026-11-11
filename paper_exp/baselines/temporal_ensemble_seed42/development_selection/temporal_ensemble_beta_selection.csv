@@ -1,0 +1,6 @@
+method,beta,mean_paired_score_diff,score_safeguard_floor,score_safeguard_pass,original_sr90_count,te_sr90_count,sr90_count_decrease,max_allowed_sr90_count_decrease,sr90_safeguard_pass,eligible,boundary_D1_reduction_pct_mean,boundary_selection_value_6dp,selected
+te_beta_0p0,0,-0.1340732764,-0.01,False,20,17,3,1,False,False,18.74581948,18.745819,False
+te_beta_0p5,0.5,-0.08578067296,-0.01,False,20,18,2,1,False,False,11.76261212,11.762612,False
+te_beta_1p0,1,-0.0829415586,-0.01,False,20,18,2,1,False,False,9.965304932,9.965305,False
+te_beta_2p0,2,-0.005208376855,-0.01,True,20,20,0,1,True,True,10.28164707,10.281647,True
+te_beta_4p0,4,0.0003848968449,-0.01,True,20,20,0,1,True,True,1.327189271,1.327189,False

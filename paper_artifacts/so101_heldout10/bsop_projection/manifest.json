@@ -1,0 +1,11 @@
+{
+  "source_manifest": "/root/autodl-tmp/so101_heldout10_boundary_export_train40_20k_v1/manifest.json",
+  "source_manifest_sha256": "f2d5ea3b57462d54213cf8a832c05cbc67f010b435f9712ea6425e5544caa9da",
+  "source_summary": "/root/autodl-tmp/so101_heldout10_boundary_export_train40_20k_v1/summary.json",
+  "source_summary_sha256": "68fddbbcb71be1329c930903967af9b642ba3d953fbc302407ac3b388b8a831d",
+  "projection_summary": "/root/autodl-tmp/so101_heldout10_bsop_projection_audit_train40_20k_v1/summary.json",
+  "projection_csv": "/root/autodl-tmp/so101_heldout10_bsop_projection_audit_train40_20k_v1/projection_boundaries.csv",
+  "bootstrap_seed": 20260825,
+  "n_bootstrap": 20000,
+  "note": "No model inference was rerun. Projection was applied offline to the frozen raw SO-101 boundary export."
+}

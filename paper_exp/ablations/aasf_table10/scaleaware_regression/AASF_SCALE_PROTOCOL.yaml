@@ -1,0 +1,23 @@
+protocol_version: 1
+
+method: scale_normalized_aasf
+
+reference_task: pusht
+reference_threshold: 10.0000000000
+reference_median_step_norm: 8.0622577483
+
+threshold_rule:
+  type: median_expert_step_ratio
+  ratio: 1.2403473459
+  equation: tau_task = ratio * median_within_episode_step_norm_task
+
+frozen_parameters:
+  alpha: 0.8
+  alpha_min: 0.45
+  gain: 0.25
+
+requirements:
+  exclude_episode_boundaries: true
+  use_training_demonstrations_only: true
+  no_test_reward_parameter_tuning: true
+  compute_task_scale_before_evaluation: true

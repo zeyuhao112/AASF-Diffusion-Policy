@@ -1,0 +1,28 @@
+status=started
+condition=Push-T image seed42 / epoch0500
+run_name=pusht_image_aasf_multicheckpoint_seed42_fresh50
+
+start_seed=4700100
+end_seed=4700149
+n_test=50
+
+runner_sha256=8f0a009d55e80ff586c626e1f6f5667227eb66952ae4e6542fbcccf371bbe4da
+checkpoint=data/checkpoints/pusht_image_official/epoch=0500-test_mean_score=0.884.ckpt
+checkpoint_sha256=bac7221f7e34cd51162dc1972e1a39ffcddc87de1dc1780c44ffa61b88c4ff76
+
+paired_policy_seed=1
+policy_seed_salt=20260710
+DP_N_ENVS=1
+
+AASF frozen parameters:
+DP_ACTION_SMOOTH_MODE=adaptive
+DP_ACTION_SMOOTH_ALPHA=0.80
+DP_ACTION_SMOOTH_ALPHA_MIN=0.45
+DP_ACTION_SMOOTH_ALPHA_MAX=0.80
+DP_ACTION_SMOOTH_THRESHOLD=10.0
+DP_ACTION_SMOOTH_GAIN=0.25
+
+BSOP_enabled=NO
+image_specific_retuning=NO
+checkpoint_specific_retuning=NO
+status=completed

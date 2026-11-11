@@ -1,0 +1,15 @@
+method=original
+status=started
+start_seed=4500300
+end_seed=4500349
+n_test=50
+runner_sha256=0bcf6c5c3158f3fc0697a4c75c008a656555053be0d9e961fd5c9bb565547f20
+checkpoint_sha256=7d5824bfaa95358e8f31921b8b5d46e7603dcf320053111785c440161df804dd
+DP_PAIRED_POLICY_SEED=1
+DP_POLICY_SEED_SALT=20260710
+DP_BSOP_ETA=1.0
+DP_BSOP_LAMBDA_MAX=0.5
+DP_BSOP_RHO=5.0
+DP_BSOP_KAPPA=0.5
+trace_count=50
+status=completed

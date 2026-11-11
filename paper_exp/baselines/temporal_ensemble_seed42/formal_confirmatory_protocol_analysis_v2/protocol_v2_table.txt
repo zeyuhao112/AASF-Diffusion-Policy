@@ -1,0 +1,24 @@
+TEMPORAL ENSEMBLE FORMAL PROTOCOL-CONFORMANT SMOOTHNESS
+==============================================
+
+Comparison: original vs te_beta_2p0
+Seeds: 4800100-4800149 (n=50)
+Common-prefix rule: paired executed prefix
+control_dt_s = 0.1
+
+D1 reduction = +0.992550%
+  95% CI [-3.185120, +4.929642]
+C1 reduction = +0.992550%
+  95% CI [-3.185120, +4.929642]
+
+D2 reduction = -0.324470%
+  95% CI [-5.065402, +4.103166]
+C2 reduction = -0.324470%
+  95% CI [-5.065402, +4.103166]
+
+D3 reduction = -3.484081%
+  95% CI [-8.828743, +1.375243]
+C3 reduction = -3.484081%
+  95% CI [-8.828743, +1.375243]
+
+common_prefix_steps: min=88, mean=211.940, max=300

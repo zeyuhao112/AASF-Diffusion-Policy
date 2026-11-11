@@ -1,0 +1,201 @@
+{
+  "source_raw_export": "/root/autodl-tmp/so101_heldout10_boundary_export_train40_20k_v1",
+  "episodes": 10,
+  "boundaries_per_reference": 263,
+  "action_dim": 6,
+  "space": "checkpoint-native normalized action coordinates",
+  "parameters": {
+    "eta": 1.0,
+    "lambda_max": 0.5,
+    "kappa": 0.5,
+    "rho_rms_per_dim": 0.1,
+    "rho_norm_l2": 0.2449489742783178,
+    "rho_rule": "rho_norm_l2 = rho_rms_per_dim * sqrt(action_dim)"
+  },
+  "primary_reference": "data: recorded robot action immediately preceding the current query",
+  "supplementary_reference": "policy: previous query's last executable prediction; not actually executed under teacher forcing",
+  "data_reference": {
+    "reference": "data",
+    "boundaries": 263,
+    "raw_jump_norm": {
+      "n": 263,
+      "mean": 0.19053238792062777,
+      "median": 0.13378559750697278,
+      "p05": 0.03406124404238536,
+      "p95": 0.46541120799485475,
+      "min": 0.018758414958495104,
+      "max": 1.2158897660516117
+    },
+    "projected_jump_norm": {
+      "n": 263,
+      "mean": 0.16390674650616893,
+      "median": 0.12077719754043899,
+      "p05": 0.030990482635840432,
+      "p95": 0.4543393491635323,
+      "min": 0.017137760117063625,
+      "max": 0.9737142984267658
+    },
+    "correction_norm": {
+      "n": 263,
+      "mean": 0.04370015668747096,
+      "median": 0.018372726298341933,
+      "p05": 0.0,
+      "p95": 0.1752538758317294,
+      "min": 0.0,
+      "max": 0.2449489742781239
+    },
+    "relative_correction": {
+      "n": 263,
+      "mean": 0.2384620678890423,
+      "median": 0.23744558610713998,
+      "p05": 0.0,
+      "p95": 0.49999999999684,
+      "min": 0.0,
+      "max": 0.4999999999982542
+    },
+    "boundary_reduction_pct": {
+      "n": 263,
+      "mean": 11.943735520715885,
+      "median": 4.322720318622652,
+      "p05": 0.0,
+      "p95": 40.26989957055337,
+      "min": 0.0,
+      "max": 47.8704318906699
+    },
+    "pooled_reduction_pct": 13.974338801343755,
+    "activation_rate_pct": 63.49809885931559,
+    "active_boundaries": 167,
+    "episodes_improved": 10,
+    "episodes_unchanged": 0,
+    "episodes_worsened": 0,
+    "episode_reduction_pct": {
+      "n": 10,
+      "mean": 13.743873891575157,
+      "median": 13.903408393360177,
+      "p05": 8.252694451049571,
+      "p95": 18.54863571952016,
+      "min": 7.601983541771458,
+      "max": 19.330548785685917
+    },
+    "episode_activation_pct": {
+      "n": 10,
+      "mean": 62.68890307396619,
+      "median": 64.6923076923077,
+      "p05": 42.870370370370374,
+      "p95": 76.99999999999999,
+      "min": 37.03703703703704,
+      "max": 80.0
+    },
+    "cluster_bootstrap_reduction_pct": {
+      "seed": 20260825,
+      "n_boot": 20000,
+      "estimate_mean": 13.939332332397308,
+      "ci95_low": 11.504938262391743,
+      "ci95_high": 16.098201108633923
+    },
+    "limiting_cap_counts": {
+      "inactive": 96,
+      "segment": 68,
+      "lambda_max": 24,
+      "rho": 6,
+      "kappa": 69
+    },
+    "violations": {
+      "nonincrease": 0,
+      "absolute": 0,
+      "relative": 0
+    }
+  },
+  "policy_reference": {
+    "reference": "policy",
+    "boundaries": 263,
+    "raw_jump_norm": {
+      "n": 263,
+      "mean": 0.3304408667939733,
+      "median": 0.2455853374990649,
+      "p05": 0.06837560935835786,
+      "p95": 0.8668802938298689,
+      "min": 0.03214081305997228,
+      "max": 1.4653348573112586
+    },
+    "projected_jump_norm": {
+      "n": 263,
+      "mean": 0.20381744763288828,
+      "median": 0.1354691509953634,
+      "p05": 0.03556845321266951,
+      "p95": 0.6564879851186002,
+      "min": 0.018600272543947048,
+      "max": 1.2203929482274898
+    },
+    "correction_norm": {
+      "n": 263,
+      "mean": 0.13001340207344322,
+      "median": 0.1161391805746866,
+      "p05": 0.028981900598637294,
+      "p95": 0.2449489742780482,
+      "min": 0.01020081673901843,
+      "max": 0.2449489742781502
+    },
+    "relative_correction": {
+      "n": 263,
+      "mean": 0.4470681569149677,
+      "median": 0.48786820828573213,
+      "p05": 0.2566577253779307,
+      "p95": 0.49999999999740935,
+      "min": 0.09417541418559924,
+      "max": 0.49999999999820166
+    },
+    "boundary_reduction_pct": {
+      "n": 263,
+      "mean": 42.950488016663016,
+      "median": 47.003737113286064,
+      "p05": 21.866347742069724,
+      "p95": 49.89319756731292,
+      "min": 0.4444380579789734,
+      "max": 49.98244232991855
+    },
+    "pooled_reduction_pct": 38.319539707432824,
+    "activation_rate_pct": 100.0,
+    "active_boundaries": 263,
+    "episodes_improved": 10,
+    "episodes_unchanged": 0,
+    "episodes_worsened": 0,
+    "episode_reduction_pct": {
+      "n": 10,
+      "mean": 38.76627538125553,
+      "median": 39.90578298405775,
+      "p05": 34.252881921631115,
+      "p95": 42.317705545929755,
+      "min": 34.094444696357066,
+      "max": 42.77491541847766
+    },
+    "episode_activation_pct": {
+      "n": 10,
+      "mean": 100.0,
+      "median": 100.0,
+      "p05": 100.0,
+      "p95": 100.0,
+      "min": 100.0,
+      "max": 100.0
+    },
+    "cluster_bootstrap_reduction_pct": {
+      "seed": 20260825,
+      "n_boot": 20000,
+      "estimate_mean": 38.36545119865084,
+      "ci95_low": 36.49250068244651,
+      "ci95_high": 40.284868985347906
+    },
+    "limiting_cap_counts": {
+      "inactive": 0,
+      "segment": 2,
+      "lambda_max": 110,
+      "rho": 42,
+      "kappa": 109
+    },
+    "violations": {
+      "nonincrease": 0,
+      "absolute": 0,
+      "relative": 0
+    }
+  }
+}

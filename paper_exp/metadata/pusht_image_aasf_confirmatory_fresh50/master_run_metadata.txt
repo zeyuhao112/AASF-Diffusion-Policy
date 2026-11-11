@@ -1,0 +1,26 @@
+status=started
+run_name=pusht_image_aasf_confirmatory_fresh50
+
+start_seed=4700000
+end_seed=4700049
+n_test=50
+
+runner_sha256=8f0a009d55e80ff586c626e1f6f5667227eb66952ae4e6542fbcccf371bbe4da
+checkpoint_sha256=0e5ddc794a069e09b8acff87ec464039b713f02ad9b82d119ddc028eb5cefa13
+
+paired_policy_seed=1
+policy_seed_salt=20260710
+
+AASF frozen parameters:
+DP_ACTION_SMOOTH_MODE=adaptive
+DP_ACTION_SMOOTH_ALPHA=0.80
+DP_ACTION_SMOOTH_ALPHA_MIN=0.45
+DP_ACTION_SMOOTH_ALPHA_MAX=0.80
+DP_ACTION_SMOOTH_THRESHOLD=10.0
+DP_ACTION_SMOOTH_GAIN=0.25
+
+Image-specific retuning:
+NONE
+
+Smoke-test seed 4600000 is excluded from confirmatory analysis.
+status=completed

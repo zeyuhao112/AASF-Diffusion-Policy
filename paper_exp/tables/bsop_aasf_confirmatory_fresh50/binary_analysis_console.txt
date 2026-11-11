@@ -1,0 +1,42 @@
+===== CONFIRMATORY PAIRED BINARY OUTCOMES =====
+Locked fresh seeds: 4300100-4300149
+Risk difference = new method minus old method.
+Confidence intervals use a deterministic paired bootstrap with 100,000 samples.
+
+========================================================================
+aasf_to_bsop_aasf
+========================================================================
+SR@0.90
+  totals: 46/50 -> 45/50
+  paired table (both fail / gained / lost / both succeed): 4 / 0 / 1 / 45
+  paired risk difference: -2.00 percentage points
+  bootstrap 95% CI: [-6.00, +0.00] percentage points
+  exact McNemar p: 1
+
+Exact success
+  totals: 31/50 -> 26/50
+  paired table (both fail / gained / lost / both succeed): 16 / 3 / 8 / 23
+  paired risk difference: -10.00 percentage points
+  bootstrap 95% CI: [-22.00, +2.00] percentage points
+  exact McNemar p: 0.226562
+
+========================================================================
+original_to_bsop_aasf
+========================================================================
+SR@0.90
+  totals: 46/50 -> 45/50
+  paired table (both fail / gained / lost / both succeed): 4 / 0 / 1 / 45
+  paired risk difference: -2.00 percentage points
+  bootstrap 95% CI: [-6.00, +0.00] percentage points
+  exact McNemar p: 1
+
+Exact success
+  totals: 27/50 -> 26/50
+  paired table (both fail / gained / lost / both succeed): 16 / 7 / 8 / 19
+  paired risk difference: -2.00 percentage points
+  bootstrap 95% CI: [-18.00, +14.00] percentage points
+  exact McNemar p: 1
+
+===== OUTPUT SHA256 =====
+5abe14bb62f2a4442cb13bbef27523a778597b26b0d879d74ac958e6fbcd39d2  paper_exp/tables/bsop_aasf_confirmatory_fresh50/confirmatory_binary_outcomes.txt
+34b531bc2c00fc38c57e01a02ac8dcf510353c182b2f24db69e7331121d7ed48  paper_exp/tables/bsop_aasf_confirmatory_fresh50/confirmatory_binary_outcomes.csv

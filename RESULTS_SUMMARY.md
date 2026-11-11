@@ -1,97 +1,75 @@
-# Final AASF Results Summary
+# AASF–BSOP results summary
 
-## Experimental design
+## Metric convention
 
-- Task: Push-T keypoint manipulation.
-- Comparison: Original Diffusion Policy versus AASF.
-- Evaluation design: 100 common-random-number paired episodes.
-- Paired evaluation seeds: 4300000–4300099.
-- AASF parameters:
-  - alpha_min = 0.45
-  - alpha_max = 0.80
-  - tau = 10
-  - gamma = 0.25
-- Timing configuration: one environment, with per-episode warm-up
-  policy queries removed before aggregation.
+Positive percentage reductions mean smoother commands. D1, D2, and D3 are
+finite-difference command metrics. C1, C2, and C3 divide them by `dt`, `dt²`,
+and `dt³`; percentage reductions are therefore unchanged. These are
+command-space proxies, not direct measurements of physical acceleration,
+torque, or mechanical jerk.
 
-## Task performance
+## Seven-condition BSOP evaluation
 
-| Metric | Original | AASF | Paired difference | Statistical result |
-|---|---:|---:|---:|---|
-| Mean score | 0.93197 ± 0.21801 | 0.92459 ± 0.21804 | −0.00738 | Bootstrap 95% CI [−0.03672, 0.01985] |
-| Score comparison | — | — | Win/tie/loss = 34/33/33 | Wilcoxon p = 0.7171 |
-| Success rate, score ≥ 0.90 | 92/100 (92%) | 89/100 (89%) | −3 percentage points | 95% CI [−8, 1]; McNemar p = 0.375 |
+Each condition uses 50 paired formal evaluation seeds and the actually
+executed command stream at 10 Hz.
 
-No statistically significant task-performance difference was detected.
-Formal equivalence or non-inferiority was not established.
+| Condition | BSOP−Original score | Boundary D1 reduction | C2 reduction | C3 reduction |
+|---|---:|---:|---:|---:|
+| Push-T lowdim seed42 | +0.001740 | 20.141429% | 7.537254% | 14.158802% |
+| Push-T lowdim seed43 | −0.000719 | 15.898807% | 5.793048% | 12.499793% |
+| Push-T lowdim seed44 | −0.023264 | 13.347558% | 5.837820% | 11.746279% |
+| BlockPush lowdim | −0.000400 | 16.859402% | 4.001281% | 8.004071% |
+| Push-T image seed42 | +0.023939 | 15.739123% | 6.937074% | 12.013036% |
+| Push-T image seed43 | −0.022441 | 13.990875% | 4.620270% | 9.918027% |
+| Push-T image seed44 | +0.012645 | 12.696782% | 6.371628% | 10.258626% |
 
-## Action smoothness
+Bootstrap intervals, per-seed values, Holm-adjusted tests, and the canonical
+cross-check are in `paper_exp/tables/bsop_time_normalized_7cond_v1/`.
 
-Positive reductions indicate smoother AASF action sequences.
+## Original four-method Push-T condition
 
-| Metric | Original | AASF | Relative reduction | Bootstrap 95% CI | Holm-adjusted p | Cohen dz |
-|---|---:|---:|---:|---:|---:|---:|
-| D1 | 9.44204 ± 1.91270 | 8.37636 ± 1.49483 | 11.29% | [8.46%, 13.97%] | 9.11e-10 | 0.725 |
-| D2 | 5.34846 ± 1.06841 | 4.46039 ± 0.80696 | 16.60% | [13.65%, 19.41%] | 2.51e-12 | 0.989 |
-| D3 | 7.54541 ± 1.75228 | 6.52998 ± 1.47608 | 13.46% | [10.03%, 16.67%] | 2.49e-09 | 0.723 |
+For the low-dimensional seed-42 checkpoint, the BSOP+AASF mechanism audit
+contains 1,504 boundaries, 69.08% activation, 14.5386% pooled same-boundary
+reduction, and a per-seed 95% bootstrap interval of [12.9596%, 16.3118%]. All
+50 paired seeds improve and all geometric-constraint violation counts are zero.
 
-AASF was smoother in 82, 84, and 77 of the 100 paired
-episodes for D1, D2, and D3, respectively.
+## AASF image transfer
 
-## Computational overhead
+Without retuning, AASF reduces D3/C3 by 16.14%, 15.21%, and 21.63% on the
+seed-42, seed-43, and seed-44 Push-T image checkpoints, respectively. The paired
+score differences are −0.0530, −0.0224, and +0.0392; corresponding confidence
+intervals are provided in the frozen three-condition table.
 
-- Net AASF post-processing overhead:
-  0.371933 ± 0.009013 ms per policy query.
-- Bootstrap 95% CI:
-  [0.370162, 0.373677] ms.
-- Relative to Original policy-inference time:
-  0.062947%.
-- Relative bootstrap 95% CI:
-  [0.062611%, 0.063276%].
+## Baselines
 
-Differences between separately measured policy-inference or total-loop
-times must not be interpreted as acceleration caused by AASF.
+- Savitzky–Golay (`window=5`, `polyorder=3`) has a confirmatory D3/C3 reduction
+  of 15.5107% with 95% CI [14.0132%, 17.1325%]. Its paired score difference is
+  −0.000970 with an interval containing zero.
+- Temporal Ensemble (`beta=2.0`) has a confirmatory D3/C3 point estimate of
+  −3.4841% with 95% CI [−8.8287%, 1.3752%]. The frozen study does not support a
+  reliable improvement claim.
 
-## Adaptive behavior
+## Post-processing timing
 
-A total of 20,979 valid adaptive decisions were analyzed.
+The final CPU microbenchmark reports mean per-query times of 73.54 μs for
+BSOP, 180.63 μs for AASF, 272.70 μs for BSOP+AASF, and 97.66 μs for the full
+TE-beta2 path. These isolated post-processing timings must not be interpreted as
+end-to-end policy acceleration.
 
-| Quantity | Result |
-|---|---:|
-| Median d_i | 8.100452 |
-| Q1 / Q3 | 4.126363 / 18.695298 |
-| IQR | 14.568935 |
-| 90th percentile | 34.737932 |
-| 95th percentile | 41.948274 |
-| Fraction d_i > tau | 41.913342% |
-| Mean alpha_i | 0.700889 ± 0.143199 |
-| Fraction alpha_i = alpha_min | 19.333619% |
-| Fraction alpha_i = alpha_max | 58.086658% |
-| Fraction alpha_i < alpha_max | 41.913342% |
+## Franka simulated replay
 
-The equality between the fraction with d_i > tau and the fraction with
-alpha_i < alpha_max confirms that the adaptive branch was activated as
-designed.
+In the frozen MuJoCo Franka replay, Original→BSOP reduces boundary-window
+torque-rate RMS by 16.23% (95% CI [13.19%, 19.23%]) and boundary-window
+end-effector jerk RMS by 17.64% (95% CI [13.87%, 21.71%]). This is simulated
+dynamics replay, not real-hardware validation.
 
-## Representative episode
+## SO-101 held-out offline audit
 
-Seed 4300005 achieved a score of 1.0 for both methods.
+On 10 recorded held-out episodes, teacher-forced offline BSOP projection reduces
+the pooled normalized boundary discrepancy from 0.190532388 to 0.163906747:
+13.974339%, with an episode-cluster 95% CI of [11.504938%, 16.098201%]. It is
+active on 167/263 boundaries and produces zero recorded constraint violations.
 
-- Original D3: 6.08080082
-- AASF D3: 4.99363296
-- Absolute D3 reduction: 1.08716787
-- Relative D3 reduction: approximately 17.88%
-
-## Supported paper conclusion
-
-AASF significantly improves first-, second-, and third-order action
-smoothness with negligible post-processing overhead, while no
-statistically significant change in task performance was detected
-across the 100 paired evaluation episodes.
-
-## Scope limitations
-
-- Results are based on one task and one trained policy checkpoint.
-- The 100 seeds are evaluation episodes, not independent training runs.
-- No physical-robot experiment has yet been conducted.
-- Non-inferiority was not formally established.
+The mean applied interpolation coefficient is 0.160965 over all boundaries and
+0.253496 over active boundaries. This experiment does not constitute online
+closed-loop deployment or physical vibration validation.

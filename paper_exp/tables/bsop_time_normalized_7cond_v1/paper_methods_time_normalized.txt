@@ -1,0 +1,36 @@
+Time-normalized command derivatives.
+All Push-T and BlockPush confirmatory environments were executed at a
+10 Hz control rate, corresponding to a control period of 0.1 s. In
+addition to the dimensionless finite-difference reductions reported in
+the primary analysis, we therefore recomputed first-, second-, and
+third-order variation on the actual executed command trajectories after
+explicit normalization by the control period. For an executed command
+sequence u_t, we define C1 = mean(||Delta u_t||_2)/Delta t,
+C2 = mean(||Delta^2 u_t||_2)/Delta t^2, and
+C3 = mean(||Delta^3 u_t||_2)/Delta t^3, with Delta t = 0.1 s.
+Because baseline and BSOP trajectories can terminate at different
+times, C1-C3 comparisons use the paired common executed prefix exactly
+as in the original finite-difference analysis.
+
+These quantities should be interpreted as time-normalized derivatives
+of the commanded action trajectory rather than direct measurements of
+physical link velocity, acceleration, torque, or mechanical jerk.
+Explicit time normalization removes dependence on the arbitrary
+sampling interval and provides a closer connection to physically
+meaningful rate, acceleration, and jerk concepts while preserving the
+original action-space semantics.
+
+Since Delta t is constant within each paired condition, multiplying
+both members of a pair by the same factor 1/Delta t^k leaves the
+percentage reduction invariant. We verified this identity numerically
+for every paired episode and all three derivative orders.
+
+Multiplicity sensitivity analysis.
+As an additional robustness analysis, exact two-sided sign tests and
+paired Wilcoxon signed-rank tests were computed for each condition.
+Holm family-wise error correction was then applied across the 21
+primary smoothness tests (seven conditions by own-trajectory boundary
+D1, C2, and C3). Common-prefix C1 and paired task-score contrasts were
+treated as separate seven-test families. This multiplicity analysis is
+reported as a sensitivity analysis in addition to, rather than as a
+replacement for, the condition-level bootstrap confidence intervals.

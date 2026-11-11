@@ -1,45 +1,26 @@
-AASF CRN Final Core Bundle
-Generated UTC: 2026-07-11T06:53:34.431562+00:00
-Project root: /root/autodl-tmp/projects/diffusion_policy
-Git commit: 5ba07ac6661db573af695b419a7947ecb704690f
+AASF-BSOP Diffusion Policy v1.1.0 provenance
 
-Git working-tree status:
-M diffusion_policy/env_runner/pusht_keypoints_runner.py
- M diffusion_policy/gym_util/async_vector_env.py
- M diffusion_policy/policy/diffusion_unet_lowdim_policy.py
- M eval.py
-?? --checkpoint
-?? --device
-?? --output_dir
-?? NEXT_STEPS.txt
-?? build_aasf_core_bundle.sh
-?? build_aasf_core_bundle_console.txt
-?? diffusion_policy/config/train_smooth_diffusion_unet_lowdim_workspace.yaml
-?? diffusion_policy/env_runner/pusht_keypoints_runner.py.bak
-?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_action_smooth_filter
-?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_adaptive_asf
-?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_sma
-?? diffusion_policy/env_runner/pusht_keypoints_runner.py.before_smooth_metrics
-?? diffusion_policy/gym_util/async_vector_env.py.bak
-?? diffusion_policy/gym_util/async_vector_env.py.bak2
-?? diffusion_policy/policy/smooth_diffusion_unet_lowdim_policy.py
-?? eval.py.before_seed_override
-?? paper_artifacts/
-?? paper_exp/
-?? paper_materials/
-?? paper_materials_package.tar.gz
-?? paper_submission/
-?? reproduce_records/
+Repository base:
+  https://github.com/zeyuhao112/AASF-Diffusion-Policy
+  parent main commit: 0b05ebd1e2ed771471eb44fd38382eecfaa94081
 
-Python:
-3.8.10
+3090 simulation evidence:
+  Push-T lowdim, Push-T image, BlockPush, SG, TE, timing, and Franka replay.
+  Formal raw-trace and score-log hashes were checked before curation.
+  The canonical seven-condition analysis regenerated 12/12 outputs byte-for-byte.
 
-Platform:
-Linux-5.15.0-135-generic-x86_64-with-glibc2.17
+4090 SO-101 evidence:
+  Dataset: lerobot/svla_so101_pickplace
+  Split: 40 train episodes / 10 held-out episodes
+  Training: seed 1000, 20,000 steps, batch size 4
+  Audit: teacher-forced held-out trajectory analysis; no online BSOP rollout
 
-Evaluation seeds:
-4300000-4300099
+Curation policy:
+  Keep final implementation, final analysis, compact evidence, and manifests.
+  Exclude weights, caches, videos, failed runs, backups, PID files, and bulk raw
+  traces. Preserve upstream Diffusion Policy source and attribution.
 
-Raw traces:
-Excluded from this core bundle.
-See paper_exp/tables/crn_final_trace_inputs.sha256.
+See:
+  docs/AASF_BSOP_REPRODUCIBILITY.md
+  AASF_BSOP_RELEASE_NOTES_v1.1.0.md
+  AASF_BSOP_V1.1.0_MANIFEST.sha256

@@ -14,7 +14,19 @@ fuse.cfg
 *.ai
 
 # Generation results
-results/
+/results/
+
+# Large or machine-local research artifacts
+paper_artifacts/traces/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.pid
+*.bak
+*.before_*
 
 ray/auth.json
 
